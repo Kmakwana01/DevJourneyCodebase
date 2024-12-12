@@ -1,0 +1,595 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  z-index: 500;
+  font-family: "Jost", sans-serif;
+  background-color: white;
+  color: black;
+  height: 65px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 20px 30px;
+}
+header ul {
+  margin-bottom: 0px;
+}
+
+.menubar > li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.menubar > li > a {
+  padding: 25px 0px;
+}
+
+.menubar > li:not(:first-child) {
+  margin-left: 50px;
+}
+
+.icon > i:not(:first-child) {
+  margin-left: 25px;
+}
+
+.icon i {
+  cursor: pointer;
+}
+
+.menubar > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.HHRR {
+  width: 100%;
+  height: 1px;
+}
+
+.submenu {
+  z-index: 100;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  top: 150%;
+  visibility: hidden;
+  transition: all ease-in-out 0.5s;
+  opacity: 0;
+  left: -90%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.submenu ul {
+  margin-left: 0px;
+}
+.submenu .megamenu > ul > li {
+  line-height: 28px;
+  text-align: center;
+  list-style-type: none;
+}
+.submenu .megamenu > ul > li a {
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.25s;
+}
+.submenu .megamenu > ul > li a:hover {
+  padding-left: 15px;
+}
+.submenu > li {
+  list-style-type: none;
+}
+.submenu > li > a {
+  text-decoration: none;
+  color: black;
+  transition: all ease-in-out 0.2s;
+}
+.submenu2 {
+  z-index: 100;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  top: 150%;
+  visibility: hidden;
+  transition: all ease-in-out 0.5s;
+  opacity: 0;
+  left: -30%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.submenu2 ul > li {
+  line-height: 28px;
+  list-style-type: none;
+}
+.submenu2 ul > li a {
+  color: black;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.submenu2 ul > li a:hover {
+  padding-left: 10px;
+}
+.submenu2 > li {
+  list-style-type: none;
+}
+.submenu2 > li > a {
+  text-decoration: none;
+  color: black;
+  transition: all ease-in-out 0.2s;
+}
+.submenu2 > li > a:hover {
+  padding-left: 15px;
+}
+
+.menubar > li {
+  padding: 18px 0px;
+  position: relative;
+}
+.menubar > li:hover .submenu, .menubar > li:hover .submenu2 {
+  display: block;
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.bar {
+  display: none;
+  margin-left: 25px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  max-width: 400px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: 0%;
+  background: #F9F9F9;
+}
+
+.overlay li {
+  list-style-type: none;
+}
+
+.overlay-content {
+  padding-left: 0px;
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  text-decoration: none;
+  font-size: 15px;
+  text-align: left;
+  display: block;
+  color: black;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: black;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 15px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 7px 17px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+}
+.accordion .active, .accordion .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "+";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+header .active:after {
+  content: "−";
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.login {
+  text-decoration: none;
+  color: #ffffff !important;
+  background: black;
+  padding: 8px 20px;
+  border: none;
+}
+
+.bxslider {
+  transition: 2s;
+}
+
+.bxslider li img {
+  width: 100%;
+}
+
+p, h1 {
+  margin-bottom: 0px;
+}
+
+.bxslider li {
+  width: 100%;
+  height: 750px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.i1 {
+  background-image: url(../image/1.webp);
+}
+
+.i2 {
+  background-image: url(../image/2.webp);
+}
+
+.i3 {
+  background-image: url(../image/4.webp);
+}
+
+.bx-wrapper {
+  margin-bottom: 0px !important;
+  transition: 1s;
+}
+
+.btnnn {
+  color: white;
+  background-color: black;
+  padding: 13px 28px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  transition: all ease-in-out 0.4s;
+}
+.btnnn:hover {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
+
+.jjff {
+  font-family: "Jost", sans-serif;
+  z-index: 100;
+}
+.jjff p, .jjff h1 {
+  margin-bottom: 0px;
+}
+.jjff .top {
+  font-size: 14px;
+}
+.jjff .bx-wrapper .bx-pager {
+  bottom: 14px;
+}
+.jjff .bx-wrapper .bx-controls-direction a {
+  z-index: 100;
+}
+
+.gg::after {
+  content: "";
+}
+
+.hhh li {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 7px 17px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  position: relative;
+}
+
+.hhh li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  border-bottom: 0.5px solid black;
+  margin-left: 16px;
+}
+
+.nnf p, .nnf h1, .nnf h2, .nnf h3, .nnf h4, .nnf h5, .nnf h6, .nnf span {
+  margin-bottom: 0px;
+}
+
+.nnf {
+  font-family: "Jost", sans-serif;
+  overflow: hidden;
+}
+
+#first {
+  background-color: transparent !important;
+}
+#first .item a {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+#first img {
+  transition: all ease-in-out 0.4s;
+}
+#first img:hover {
+  will-change: transform;
+  transform: scale(1.2);
+}
+#first .active:after {
+  content: "";
+}
+
+#first.owl-theme .owl-dots .owl-dot span {
+  margin: 3px 4px !important;
+}
+
+#first.owl-theme .owl-dots .owl-dot.active span {
+  background-color: black !important;
+}
+
+#first.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 20px;
+}
+
+.jjjk .btn {
+  outline: 1px solid transparent;
+  background-color: black !important;
+  border: none !important;
+  margin-top: 15px;
+  text-align: center !important;
+}
+.jjjk .btn:hover {
+  outline: 1px solid black;
+  background-color: white !important;
+  color: black !important;
+}
+.jjjk .card-body p {
+  margin-bottom: 0.5rem;
+}
+.jjjk .card {
+  margin-top: 40px;
+}
+
+.hhhff {
+  overflow: hidden;
+}
+.hhhff .r1 {
+  border-radius: 7px;
+}
+.hhhff .card {
+  border-color: transparent;
+  overflow: hidden;
+}
+.hhhff .card-body {
+  padding: 0px;
+}
+.hhhff .icon44 i {
+  font-size: 14px;
+}
+.hhhff .icon44 {
+  margin-bottom: 8px;
+}
+.hhhff .box {
+  margin-top: 30px;
+}
+.hhhff .hover-image {
+  transition: transform 0.5s;
+}
+.hhhff .r1 {
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+.hhhff .card-img-top {
+  overflow: hidden;
+}
+.hhhff .imgg {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 8px;
+}
+.hhhff .r1:hover {
+  transform: scale(1.2);
+}
+.hhhff .card-title {
+  margin-top: 20px;
+}
+.hhhff .btnb {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0.5px solid #dedede;
+  background-color: transparent;
+  padding: 13px 25px;
+  border-radius: 40px;
+  width: 200px;
+  transition: all ease-in-out 0.5s;
+}
+.hhhff .btnb:hover {
+  background-color: black;
+  color: white;
+}
+
+.gggd {
+  padding: 2rem;
+}
+
+.nsj {
+  border-radius: 15px;
+  padding: 100px;
+  background-image: url(../image/banner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nsj p, .nsj ul, .nsj h1, .nsj h2 {
+  margin-bottom: 0px;
+}
+.nsj .btnn {
+  color: white;
+  background-color: black;
+  padding: 10px 40px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all ease-in-out 0.4s;
+}
+.nsj .btnn:hover {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
+.nsj .ban {
+  background-color: white;
+  border-radius: 10px;
+  padding: 45px;
+  max-width: 500px;
+  margin-right: 0px;
+}
+
+.mms p, .mms ul, .mms h1, .mms h2, .mms h4 {
+  margin-bottom: 0px;
+}
+.mms .cont {
+  margin-bottom: 30px;
+}
+.mms .cont .img5 img {
+  width: 50px;
+}
+.mms h4 {
+  font-weight: 600;
+}
+
+.ert h6 {
+  font-weight: 600;
+}
+.ert li > a {
+  color: black;
+  text-decoration: none;
+}
+.ert li {
+  list-style-type: none;
+}
+.ert h6 {
+  margin-bottom: 20px;
+}
+.ert .logo {
+  margin-bottom: 20px;
+}
+.ert .icon3 i {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: 0.3s;
+  color: black;
+}
+.ert .icon3 i:hover {
+  color: white;
+  background-color: black;
+}
+.ert .icon3 a:not(:first-child) {
+  margin-left: 10px;
+}
+.ert .foot {
+  line-height: 35px;
+}
+.ert .inn {
+  transition: 0.3s;
+  width: 54%;
+  padding: 11px 25px;
+  border-radius: 40px;
+  border: 1px solid #ebebeb !important;
+  outline: none;
+}
+.ert .inn:focus {
+  border-color: black !important;
+}
+.ert .btnn {
+  color: white;
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  padding: 11px 30px;
+  transition: 0.3s;
+}
+.ert .btnn:hover {
+  color: black;
+  background-color: transparent;
+  border-color: black;
+}
+.ert li > a {
+  transition: 0.3s;
+}
+.ert li > a:hover {
+  padding-left: 10px;
+}
+
+.nnm {
+  overflow: hidden;
+}
+.nnm .item {
+  border-radius: 10px;
+}
+.nnm img {
+  transition: all ease-in-out 0.5s;
+}
+.nnm img:hover {
+  will-change: transform;
+  transform: scale(1.2);
+}
+.nnm .item {
+  overflow: hidden;
+}
+.nnm .owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 3px;
+  margin: 2px 2px;
+}
+.nnm .owl-theme .owl-dots .owl-dot.active span, .nnm .owl-theme .owl-dots .owl-dot:hover span {
+  background: black;
+}/*# sourceMappingURL=style.css.map */

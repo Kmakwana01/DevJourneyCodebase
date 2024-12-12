@@ -1,0 +1,54 @@
+#include<iostream.h>
+#include<conio.h>
+class shopping{
+		int code[100];
+		float price[100];
+		int count;
+		public:
+			void count1()
+			{
+				count=0;
+			}
+			void list()
+			{
+				cout<<"enter the code::";
+				cin>>code[count];
+				cout<<"enter the price::";
+				cin>>price[count];
+				count++;
+			}
+			void sum()
+			{
+				float sum=0;
+				for(i=0; i<count; i++)
+				{
+					sum+=price[i];
+				}
+			}
+			void remove()
+			{
+				int a;
+				cout<<"\nenter code no.::";
+				cin>>a;
+				for(int i=0; i<count; i++)
+				{
+					if(a==code[i])
+					{
+						price[i]=0;
+					}
+				}
+			}
+			void displayalldata()
+			{
+				for(int i=0; i<count; i++)
+				{
+					cout<<code[i]<<" "<<price[i];
+				}
+			}
+};
+void main()
+{
+	clrscr();
+	shopping obj;
+	obj.count1;
+	for

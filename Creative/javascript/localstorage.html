@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+
+    <form action="" name="main" onsubmit="val(); return false">
+        <input type="text" name="name" placeholder="enter name"><br><br>    
+        <input type="text" name="email" placeholder="enter email"><br><br>     
+        <input type="text" name="phone" placeholder="enter phone"><br><br> 
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        let arr = []
+       function val(){
+        let name = document.main.name.value;
+        let email = document.main.email.value;
+        let phone = document.main.phone.value;
+        // console.log(name,email,phone)
+        let data = {
+            "Name":name,
+            "Email":email,
+            "Phone":phone
+        }
+        arr.push(data)
+        localStorage.setItem("key1",JSON.stringify(arr))
+       }
+    </script>
+</body>
+</html>

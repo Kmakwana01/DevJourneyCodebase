@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="demo"></div>
+  <!-- <button onclick="call()">pop</button>
+  <button onclick="push()">Push</button>
+  
+
+  
+  <button onclick="slice()">Slice</button>
+  <button onclick="rev()">Revrse</button>
+  <button onclick="short()">Short</button> -->
+  <button onclick="call()">Call</button>
+</body>
+<script>
+   var arr=["a","b","c","d","e","f","g"];
+   var arr2=["a","b","c","d","e","f","g"];
+   let array=[2,123,4,5,6,5467,4,7,845,23]
+    var a=arr;
+  // document.getElementById("demo").innerHTML=a;
+    // document.write("<br>" + "<h1>" + a + "<h1/>");
+      function call(){
+       arr.pop();
+       document.getElementById("demo").innerHTML=a;
+        
+      }
+      
+      function push(){
+        var b= prompt("enter your choice::");
+        arr.push(b);
+        document.getElementById("demo").innerHTML=a;
+      }
+      function push(){
+        var b= prompt("enter your choice::");
+        arr.unshift(b);
+        document.getElementById("demo").innerHTML=a;
+      }
+      function slice(){
+        var r=prompt("How Many Number slice::");
+        var a=arr.slice(r);
+        document.getElementById("demo").innerHTML=a;
+
+      }
+      function rev(){
+        var p=arr.reverse();
+        document.getElementById("demo").innerHTML=p;
+
+      }
+   
+      function short(){
+        var p=arr.sort();
+        document.getElementById("demo").innerHTML=p
+      }
+      document.write(array)
+      function call(){
+        var p=array.sort(function(a,b){return a-b});
+        document.getElementById("demo").innerHTML=p
+      }
+</script>
+</html>

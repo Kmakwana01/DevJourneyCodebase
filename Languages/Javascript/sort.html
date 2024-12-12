@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+let car = {
+  cars: function(car2) {
+    let result = '';
+    let index = 0;
+    for (let pro in car2) {
+      result += index + ': ' + pro + '' + '<br>';
+      index++;
+    }
+    return result.trim();
+  },
+  cars2:"thar"
+};
+
+let car2 = {
+  car1: "volvo",
+  car2: "thar",
+  c:"asdf"
+};
+
+document.write(car.cars(car2));
+
+
+
+</script>
+</html>

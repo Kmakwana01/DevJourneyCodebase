@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="watch"></h1>
+    <button onclick="checktime()">Date</button>
+    <button onclick="year()">YEAR</button>
+    <button onclick="month()">Month</button>
+    <button onclick="hours()">Hours</button>]
+    <button onclick="second()">SECOND</button>
+    <button onclick="DAtes()">DATES</button>
+    <button onclick="minute()">Minutes</button>
+    <button onclick="day()">day</button>
+    
+  <!-- <button onclick="pop()">POP</button>
+  <button onclick="push()">PUSH</button>
+  <button onclick="slice()">Slice</button>
+  <button onclick="rev()">REVERSE</button>
+  <button onclick="Shift()">SHIFT</button> -->
+</body>
+<script>
+//    var array=[];
+//    va
+//    array=["ginger","sonflower","tomato","potato"];
+//     var i=array;
+//     document.getElementById("101").innerHTML=array;
+//     function pop(){
+//         array.pop();
+//         document.getElementById("101").innerHTML=array;
+//     }
+//     function push(){
+//         var t=prompt("enter your choice");
+//         array.push(t);
+//         document.getElementById("101").innerHTML=array;
+//     }
+//     function slice(){
+//         var x=array.slice(2)
+//         document.getElementById("101").innerHTML=x;
+//     }
+//     function rev(){
+//         array.reverse();
+//         document.getElementById("101").innerHTML=array;
+//     }
+//     function Shift(){
+//        var g= array.shift();
+//         document.getElementById("101").innerHTML=g;
+//     }
+var timeanddate= new Date();
+function checktime(){
+    document.getElementsByClassName("watch")[0].innerHTML=timeanddate;
+}
+function year(){
+    document.getElementsByClassName("watch")[0].innerHTML=timeanddate.getFullYear();
+}
+function month(){
+    document.getElementsByClassName("watch")[0].innerHTML=timeanddate.getMonth();
+}
+function hours(){
+    document.getElementsByClassName("watch")[0].innerHTML=timeanddate.getHours();
+}
+function second(){
+  document.getElementsByClassName("watch")[0].innerHTML=timeanddate.getSeconds();
+}
+function DAtes(){
+    document.getElementsByClassName("watch")[0].innerHTML=timeanddate.getDate();
+}
+function minute(){
+    document.getElementsByClassName("watch")[0].innerHTML=timeanddate.getMinutes();
+}
+function day(){
+    document.getElementsByClassName("watch")[0].innerHTML=timeanddate.getTime();
+}
+
+
+
+
+</script>
+</html>

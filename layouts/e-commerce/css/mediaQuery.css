@@ -1,0 +1,45 @@
+@media screen and (max-width:992px){
+    .menubar{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    .bxslider li{
+        height: 500px;
+    }
+    .nsj{
+        padding: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width:576px){
+    .icon{
+        display: none;
+    }
+    header{
+        height: 55px;
+    }
+    .bxslider li{
+        height: 300px;
+    }
+    .bxslider h1{
+        font-size: 38px !important;
+    }
+    .btnnn{
+        padding: 7px 30px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    header{
+        padding: 10px;
+    }
+    .gggd{
+        padding: 1rem;
+    }
+
+}

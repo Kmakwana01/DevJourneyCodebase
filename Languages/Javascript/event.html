@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo" onclick="demo()"><button>click</button></div>
+    <!-- <div class="demo"><button onclick="demo()">click2</button></div>
+    <div class="div"></div>
+    <div id="101">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum distinctio praesentium sapiente porro quia odio ipsam, similique dolores quos at, doloremque explicabo nesciunt inventore quibusdam perspiciatis cupiditate deleniti veritatis error mollitia eius asperiores aperiam. Aliquam nulla, labore a eaque, at reiciendis voluptas error expedita aut fugit incidunt ab architecto officiis aliquid! Quasi asperiores harum fugit excepturi impedit quia esse. Error, repudiandae minus! Veniam nemo ex, ab consectetur fugiat explicabo eius rerum quam blanditiis quod odio placeat doloribus laboriosam dolor repellat magni vero consequatur temporibus voluptate doloremque illo atque alias dolores culpa. Ab, accusantium officia mollitia exercitationem consequatur cupiditate quos autem!</div> 
+    <div onmouseenter="enter()" onmouseleave="leave()" id="101">Lorem ipsum dolor sit amet consecteturs <span>khsual</span> adipisicing elit. Laborum distinctio praesentium sapiente porro quia odio ipsam, similique dolores quos at, doloremque explicabo nesciunt inventore quibusdam perspiciatis cupiditate deleniti veritatis error mollitia eius asperiores aperiam. Aliquam nulla, labore a eaque, at reiciendis voluptas error expedita aut fugit incidunt ab architecto officiis aliquid! Quasi asperiores harum fugit excepturi impedit quia esse. Error, repudiandae minus! Veniam nemo ex, ab consectetur fugiat explicabo eius rerum quam blanditiis quod odio placeat doloribus laboriosam dolor repellat magni vero consequatur temporibus voluptate doloremque illo atque alias dolores culpa. Ab, accusantium officia mollitia exercitationem consequatur cupiditate quos autem!</div>  -->
+
+</body>
+<script>
+    // let ref=document.getElementsByClassName("demo")[0];
+    // ref.addEventListener("ondbclick",()=>{
+    //     alert("success");
+    // })
+    // ref.addEventListener("click",()=>{
+    //     document.getElementsByClassName('div')[0].innerHTML='';
+    // })
+    // function demo(){
+    //    alert('success')
+    //     // document.getElementsByClassName('div')[0].innerHTML='success';
+    // }
+    // function demo(){
+    //     document.getElementsByClassName('div')[0].innerHTML='success';
+    // }
+    // ref.onclick=()=>{
+    //     document.write('khsuahlk')
+    // }
+    // ref.addEventListener("click",demo);
+    function demo(){       
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+     }
+
+        let a=document.getElementById("101");
+        a.addEventListener("click",click1)
+        a.addEventListener("mouseup",up);
+        a.addEventListener("mouseenter",enter)
+        a.addEventListener("mousedown",down)
+        // //  mousedown and mouseup
+    let ref3=document.getElementById('101');
+        function up(){
+            ref3.style.color="green";
+           
+        }
+        function down(){
+            ref3.style.color='red';
+        }
+        // mouseleave and mouseenter
+    let ref =document.getElementById('101');
+        function enter(){
+            ref.style.color="red";
+           
+        }
+        function leave(){
+            ref.style.color='';
+        }
+       function click1(){
+        ref.style.color="blue";
+
+       }
+
+
+</script>
+</html>

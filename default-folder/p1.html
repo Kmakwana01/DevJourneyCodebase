@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="portfolio">
+        <!-- Project 1 -->
+        <div class="project" onmouseover="showInfo('project1')" onmouseout="hideInfo('project1')">
+            <img src="https://source.unsplash.com/random/300x200" alt="Project 1">
+            <div class="info" id="project1Info">
+                <a href="#" class="project-link"><i class="fa-solid fa-square-arrow-up-right"></i> View site</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project" onmouseover="showInfo('project2')" onmouseout="hideInfo('project2')">
+            <img src="https://source.unsplash.com/random/300x200" alt="Project 2">
+            <div class="info" id="project2Info">
+                <a href="#" class="project-link">Project 2</a>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function showInfo(projectId) {
+            const infoElement = document.getElementById(`${projectId}Info`);
+            infoElement.style.opacity = 1;
+        }
+        
+        function hideInfo(projectId) {
+            const infoElement = document.getElementById(`${projectId}Info`);
+            infoElement.style.opacity = 0;
+        }
+        
+    </script>
+</body>
+</html>

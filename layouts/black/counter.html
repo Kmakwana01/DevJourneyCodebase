@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <style>
+    *{
+        background-color: #212529;
+    }
+    .facts-single {
+    text-align: center;
+}
+.facts-single h3 {
+    font-size: 52px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+}
+
+.facts-single h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    margin-left: -15px;
+    background: rgb(255, 255, 255);
+}
+
+.facts-single p {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.03em;
+}
+.countermain h5{
+    color: #67e8f9;
+}
+.dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback {
+    border-radius: 3px;
+    padding: 4px 12px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: 0.6px solid white;
+}
+header .scrolled{
+    /* background-color:white;
+    color: black; */
+
+}
+.change{
+    background-color: white !important;
+    color: black !important;
+    transition: 0.5s;
+}
+   </style>
+</head>
+
+<body>
+    <section class="countermain" >
+        <div class="container">
+            <!-- Section Title start -->
+
+            <!-- Section Title end -->
+
+            <div class="row">
+                <!-- Fact single start -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="facts-single">
+                        <h3><span class="counter">4500</span><span>+</span></h3>
+                        <h5>Users Active</h5>
+                    </div>
+                </div>
+                <!-- Fact single end -->
+
+                <!-- Fact single start -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="facts-single">
+                        <h3><span class="counter">100</span><span>+</span></h3>
+                        <h5>Trusted Companies</h5>
+                    </div>
+                </div>
+                <!-- Fact single end -->
+
+                <!-- Fact single start -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="facts-single">
+                        <h3><span>$</span><span class="counter">250</span><span>M+</span></h3>
+                        <h5>Total Transation</h5>
+                    </div>
+                </div>
+                <!-- Fact single end -->
+                <!-- Fact single start -->
+                <!-- Fact single end -->
+                <hr class="mt-5 mb-5 hr">
+            </div>
+
+        </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="jquery.js"></script>
+<script src="jquery.counterup.min.js"></script>
+<script src="jquery.waypoints.min.js"></script>
+<script>
+    $('.counter').counterUp({
+    delay: 30,
+    time: 4000
+})
+</script>
+</body>
+
+</html>

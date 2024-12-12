@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  
+<header>
+  <nav class="navbar navbar-expand-lg position-sticky top-0"
+  style="background-color: #fff; z-index: 700;     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+  <div class="container vv">
+    <a class="navbar-brand color center ff" href="#"><i class="fa-brands fa-dropbox color me-2"
+        style="font-size: 35px;"></i>
+      <h4>Azire</h4>
+    </a>
+    <button class="navbar-toggler color" type="button">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Services<i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="menu">
+            <li><a href="#">demo</a></li>
+            <li><a href="#">demo</a></li>
+            <li><a href="#">demo</a></li>
+            <li><a href="#">demo</a></li>
+            <li><a href="#">demo</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#team">
+            Team
+          </a>
+          <!-- <ul class="menu">
+            <li><a href="#">Dawid Warner</a></li>
+            <li><a href="#">Marnush</a></li>
+            <li><a href="#">Alex Hales</a></li>
+            <li><a href="#">Ben Stockes</a></li>
+            <li><a href="#">Sam Curran</a></li>
+            <li><a href="#">Tom Cruise</a></li>
+          </ul> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#prising">Prising</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<section class="font ">
+  <div id="myNav" class="overlay " style="z-index: 999;">
+    <div class="d-flex s-b p-10"> <a href="#" class="d-flex align-items-center"><i
+          class="fa-brands fa-dropbox color me-2 " style="font-size: 35px;"></i>
+        <h4 class="color">Azire</h4>
+      </a> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-arrow-left color"
+          style="font-size: 25px; margin-right: 11px; ;"></i></a></div>
+    <div class="overlay-content">
+      <div class="container bbbf" style="margin: auto; ">
+        <div class="accordion accordion shadow bg-white" style="padding: 15px;">
+          <div class="accordion-item"><a href="index.html"><span>Home</span></a>
+          </div>
+          <div class="accordion-item"><a href="index.html#service" onclick="closeNav()"><span>Service</span></a></div>
+          <div class="accordion-item"><a href="index.html#team" onclick="closeNav()"><span>Team</span></a></div>
+          <div class="accordion-item"><a href="index.html#prising" onclick="closeNav()"><span>Prising</span></a></div>
+          <div class="accordion-item"><a href="index.html#testimonials" onclick="closeNav()"><span>Testimonial</span></a></div>
+          <div class="accordion-item"><a href="index.html#contact" onclick="closeNav()"><span>Contact Us</span></a></div>
+          <div class="accordion-item"><a href="term.html" onclick="closeNav()"><span>Terms & Conditions</span></a></div>
+          <div class="accordion-item"><a href="privacy.html" onclick="closeNav()"><span>Privacy & Policy</span></a></div>
+          <div class="accordion-item"><a href="faq.html" onclick="closeNav()"><span>FAQs</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</header>
+
+ <section class="main">
+  <div class="container py70">
+    <div class="row">
+      <div class="col-12 col-md-6 center">
+        <div class="item">
+          <h1 class="mt-24" data-aos="fade-right" data-aos-duration="1000">App, Business & SaaS <br
+              class="d-none d-lg-block">
+            Landing Page Template</h1>
+          <p class="mt-24" data-aos="fade-left" data-aos-duration="1400">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Rem repellendus quasi fuga
+            nesciunt dolorum nulla magnam veniam sapiente, fugiat! fuga nesciunt dolorum nulla magnam veniam
+            sapiente, fugiat!</p>
+          <div class="btns mt-28 " data-aos="fade-right" data-aos-duration="1800">
+            <button class="btnss me-2">Download Now</button>
+            <button class="btnss b1">Learn More</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 img mm-t" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="image/intro-mobile.png" class="img-fluid" alt="">
+      </div>
+
+    </div>
+  </div>
+ </section>
+  <!--  -->
+
+  <!-- service -->
+  <main id="service">
+    <p style="visibility: hidden;">asdf</p>
+  <section class="nngh font">
+    <div class="container py70">
+      <div class="row">
+        <h2 class="text-center">Our Services</h2>
+        <div class="shape mt-2"></div>
+      </div>
+      <div class="row mmt-5">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 hgy">
+          <div data-aos="fade-up" data-aos-duration="800">
+            <div class="card card-height">
+              <div class="card-body">
+                <div class=" icon4"> <i class="fa-solid fa-gear"></i></div>
+                <h5 class="card-title mt-16">EASY TO USED</h5>
+                <p class="mt-12">Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt
+                  bibendum gravida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 hgy">
+          <div data-aos="fade-up" data-aos-duration="900">
+            <div class="card card-height">
+              <div class="card-body">
+                <div class="icon4">
+                  <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h5 class="card-title mt-16">AWESOME DESIGN</h5>
+                <p class="mt-12">Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt
+                  bibendum gravida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 hgy">
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="card card-height">
+              <div class="card-body">
+                <div class="icon4">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <h5 class="card-title mt-16">EASY TO CUSTOMIZE</h5>
+                <p class="mt-12">Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt
+                  bibendum gravida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 hgy">
+          <div data-aos="fade-up" data-aos-duration="1100">
+            <div class="card card-height">
+              <div class="card-body">
+                <div class="icon4">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h5 class="card-title mt-16">UI/UX DESIGN</h5>
+                <p class="mt-12">Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt
+                  bibendum gravida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 hgy">
+          <div data-aos="fade-up" data-aos-duration="1200">
+            <div class="card card-height">
+              <div class="card-body">
+                <div class="icon4">
+                  <i class="fa-solid fa-mobile"></i>
+                </div>
+                <h5 class="card-title mt-16">APP DEVELOPMENT</h5>
+                <p class="mt-12"> Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt
+                  bibendum gravida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 hgy">
+          <div data-aos="fade-up" data-aos-duration="1300">
+            <div class="card card-height">
+              <div class="card-body">
+                <div class="icon4">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h5 class="card-title mt-16">USER FRIENDLY INTERFACE</h5>
+                <p class="mt-12">Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt
+                  bibendum gravida.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <section class="nnh py60 font">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 center">
+          <div class="" data-aos="fade-up" data-aos-duration="1000">
+            <div class="tag">
+              <span>Manage Statistics</span>
+            </div>
+            <div class=" mt-20">
+              <h2>Detail Statistics your Company</h2>
+            </div>
+            <p class="mt-20">Praesent imperdiet, tellus et euismod euismod, risus lorem euismod erat, at finibus neque
+              odio quis metus. Donec vulputate arcu quam. Morbi quis tincidunt ligula. Sed rutrum tincidunt pretium.
+              Mauris auctor, purus a pulvinar fermentum, odio dui vehicula lorem, nec pharetra justo risus quis mi. Ut
+              ac ex sagittis, viverra nisl vel, rhoncus odio.</p>
+            <div class="mt-24">
+              <button class="btn7">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mm-t">
+          <div data-aos="zoom-in" data-aos-duration="1000">
+            <img src="image/i-2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py60 jjgh font">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">Awesome Future</h2>
+        <div class="shape mt-2"></div>
+      </div>
+      <div class="row mmt-5">
+        <div class="col-md-12 col-lg-4 ">
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <div class="box1 d-flex">
+              <div class="text">
+                <h5>Bootstrap 5.3 Based</h5>
+                <p class="mt-12">Lorem Ipsum is simply dummy text <br class="d-none"> of the printing and typesetting
+                  <br class="d-none d-xl-block"> industry.
+                </p>
+              </div>
+              <span class="center">
+                <i class="fa-solid fa-rocket"></i>
+              </span>
+            </div>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1200">
+            <div class="box1 d-flex">
+              <div class="text">
+                <h5>Full Responsive</h5>
+                <p class="mt-12">Lorem Ipsum is simply dummy text <br class="d-none"> of the printing and typesetting
+                  <br class="d-none d-xl-block"> industry.
+                </p>
+              </div>
+              <span class="center">
+                <i class="fa-solid fa-house-laptop"></i>
+              </span>
+            </div>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1400">
+            <div class="box1 d-flex">
+              <div class="text">
+                <h5>HTML5,CSS3 & SASS</h5>
+                <p class="mt-12">Lorem Ipsum is simply dummy text <br class="d-none"> of the printing and typesetting
+                  <br class="d-none d-xl-block"> industry.
+                </p>
+              </div>
+              <span class="center">
+                <i class="fa-solid fa-gear"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 center " style="margin-top: 50px;">
+          <div data-aos="zoom-in" data-aos-duration="1000">
+            <img src="image/mobile.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <div class="box1 d-flex">
+              <div class="text">
+                <h5>Modern Design</h5>
+                <p class="mt-12">Lorem Ipsum is simply dummy text <br class="d-none"> of the printing and typesetting
+                  <br class="d-none d-xl-block"> industry.
+                </p>
+              </div>
+              <span class="center">
+                <i class="fa-solid fa-swatchbook"></i>
+              </span>
+            </div>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1200">
+            <div class="box1 d-flex">
+              <div class="text">
+                <h5>Multi-Purpose Template</h5>
+                <p class="mt-12">Lorem Ipsum is simply dummy text <br class="d-none"> of the printing and typesetting
+                  <br class="d-none d-xl-block"> industry.
+                </p>
+              </div>
+              <span class="center">
+                <i class="fa-solid fa-layer-group"></i>
+              </span>
+            </div>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1400">
+            <div class="box1 d-flex">
+              <div class="text">
+                <h5>Working Contact Form </h5>
+                <p class="mt-12">Lorem Ipsum is simply dummy text <br class="d-none"> of the printing and typesetting
+                  <br class="d-none d-xl-block"> industry.
+                </p>
+              </div>
+              <span class="center">
+                <i class="fa-regular fa-id-card"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="team">
+    <p style="visibility: hidden;" >asdf</p>
+  <section class="nnh5 py60 font" data-aos="fade-up" data-aos-duration="2000">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">Meet Our Team</h2>
+        <div class="shape mt-2"></div>
+      </div>
+      <div class="row mt-3 g-2">
+        <div class="col-12 col-sm-6">
+          <div class="card d-flex">
+            <div class="card-body flex4">
+              <div>
+                <img src="image/m1.png" class="card-img-top iii" alt="...">
+              </div>
+              <div class="text p-3 center">
+                <div>
+                  <h5 class="card-title mt-10">David Smith</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary mt-8">Front-end Developer</h6>
+                  <p class="card-text mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                    officiis hic tenetur.</p>
+                  <div class="icon mt-16">
+                    <a href="#" class="card-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 font">
+          <div class="card d-flex">
+            <div class="card-body flex4">
+              <div>
+                <img src="image/m2.png" class="card-img-top iii" alt="...">
+              </div>
+              <div class="text p-3 center">
+                <div>
+                  <h5 class="card-title mt-10">ERIC PETERSON</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary mt-8">Product Designer</h6>
+                  <p class="card-text mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                    officiis hic tenetur.</p>
+                  <div class="icon mt-16">
+                    <a href="#" class="card-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 font">
+          <div class="card d-flex">
+            <div class="card-body flex4">
+              <div>
+                <img src="image/m3.png" class="card-img-top iii" alt="...">
+              </div>
+              <div class="text p-3 center">
+                <div>
+                  <h5 class="card-title mt-10">DURWIN BABB</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary mt-8">Lead Designer</h6>
+                  <p class="card-text mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                    officiis hic tenetur.</p>
+                  <div class="icon mt-16">
+                    <a href="#" class="card-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 font">
+          <div class="card d-flex">
+            <div class="card-body flex4">
+              <div>
+                <img src="image/m4.png" class="card-img-top iii" alt="...">
+              </div>
+              <div class="text p-3 center">
+                <div>
+                  <h5 class="card-title mt-10">MARIJN OTTE </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary mt-8">Lead Designer</h6>
+                  <p class="card-text mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                    officiis hic tenetur.</p>
+                  <div class="icon mt-16">
+                    <a href="#" class="card-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="card-link"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <main id="prising">
+    <p style="visibility: hidden;">asdf</p>
+  <section class="bbfh py60 font" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">Prising</h2>
+        <div class="shape"></div>
+      </div>
+      <div class="row gx-5 mmt-5">
+        <div class="col-sm-12 col-md-6 col-lg-4 cc">
+          <div>
+            <div data-aos="flip-left" data-aos-duration="1000">
+              <div class="bbhhm">
+                <div class="img text-center">
+                  <i class="fa-brands fa-hive"></i>
+                </div>
+                <div class="content text-center">
+                  <span class="color3">$10 <span class="muted">/mo</span></span>
+                  <h5>Pro</h5>
+                  <p>1 USer</p>
+                  <p>10Gb Storage</p>
+                  <p>Email Support</p>
+                  <p>Lifetime Support</p>
+                  <div class="text-center mt-24">
+                    <button class="btn6">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 cc">
+          <div class="bbhhm active">
+            <div class="img text-center">
+
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="content text-center">
+              <span class="color3">$35 <span class="muted">/mo</span></span>
+              <h5>Plus</h5>
+              <p>10 USer</p>
+              <p>30Gb Storage</p>
+              <p>Priority Email Support</p>
+              <p>Lifetime Updates</p>
+              <div class="text-center mt-24">
+                <button class="btn6">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mx-auto cc">
+          <div>
+            <div data-aos="flip-right" data-aos-duration="1000">
+              <div class="bbhhm">
+                <div class="img text-center">
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="content text-center">
+                  <span class="color3">$150 <span class="muted">/mo</span></span>
+                  <h5>Primium</h5>
+                  <p>Unlimited Users</p>
+                  <p>10Gb Storage</p>
+                  <p>24/7 Suppoot</p>
+                  <p>Lifetime Updates</p>
+                  <div class="text-center mt-24">
+                    <button class="btn6">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <main id="testimonials">
+    <p style="visibility: hidden;">asdf</p>
+  <section class="asdfu py60 font" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center text-white">Testimonials</h2>
+        <div class="shape" style="background-color: white; margin-bottom: 35px;"></div>
+      </div>
+      <div class="row">
+
+        <div class="owl-carousel owl-theme" id="two">
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mt-24">
+                  <img src="image/i2.jpg" class="bbf" alt="">
+                </div>
+                <h6 class="card-title mt-24">Fernanda Anaya</h6>
+                <p style="color: black; font-size: 14px; font-weight: 600; color: #333;" class="mt-12">Developer</p>
+                <p class="card-text mt-16">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex
+                  fermentum, gravida felis nec, tincidunt ligula.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mt-24">
+                  <img src="image/i3.jpg" class="bbf" alt="">
+                </div>
+                <h6 class="card-title mt-24">Domminy Albert</h6>
+                <p style="color: black; font-size: 14px; font-weight: 600; color: #333;" class="mt-12">Design co.</p>
+                <p class="card-text mt-16">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex
+                  fermentum, gravida felis nec, tincidunt ligula.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mt-24">
+                  <img src="image/i4.jpg" class="bbf" alt="">
+                </div>
+                <h6 class="card-title mt-24">Danial Sams</h6>
+                <p style="color: black; font-size: 14px; font-weight: 600; color: #333;" class="mt-12">Awesome
+                  Technology</p>
+                <p class="card-text mt-16">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex
+                  fermentum, gravida felis nec, tincidunt ligula.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mt-24">
+                  <img src="image/i5.jpg" class="bbf" alt="">
+                </div>
+                <h6 class="card-title mt-24">Alex Hales</h6>
+                <p style="color: black; font-size: 14px; font-weight: 600; color: #333;" class="mt-12">Designer</p>
+                <p class="card-text mt-16">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex
+                  fermentum, gravida felis nec, tincidunt ligula.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="mt-24">
+                  <img src="image/i6.jpg" class="bbf" alt="">
+                </div>
+                <h6 class="card-title mt-24">David Smith</h6>
+                <p style="color: black; font-size: 14px; font-weight: 600; color: #333;" class="mt-12">Creative Head</p>
+                <p class="card-text mt-16">Praesent cursus nulla non arcu tempor, ut egestas elit tempus. In ac ex
+                  fermentum, gravida felis nec, tincidunt ligula.</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <section class="register font" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row p-5 ">
+        <div class="col-12 col-md-8">
+          <h2>Get 30 Days Free trial</h2>
+          <p>Praesent imperdiet, tellus et euismod euismod, risus lorem euismod erat, at finibus neque odio quis metus.
+            Donec vulputate arcu quam.</p>
+        </div>
+        <div class="center col-12 col-md-4">
+          <button class="btnn mt-2">Register Now</button>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+  <main id="contact">
+    <p style="visibility: hidden;">asdf</p>
+    <section class="ndk py60 font" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h2>Contact US</h2>
+            <div class="shape"></div>
+          </div>
+        </div>
+        <div class="row mmt-5">
+          <div class="col-12 col-md-7" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row bbnn">
+              <div class="col-12 col-md-6 mt-4">
+                <input type="text" id="name" placeholder="Name" style="width: 100%;">
+              </div>
+              <div class="col-12 col-md-6 mt-4">
+                <input type="text" id="email" placeholder="Email" style="width: 100%;">
+              </div>
+              <div class="col-12 mt-4">
+                <input type="text" id="subject" placeholder="Subject" style="width: 100%;">
+              </div>
+              <div class="col-12 mt-4">
+                <textarea name="aasdf" id="textarea" cols="30" rows="6" placeholder="Your Message"
+                  style="width: 100%;"></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button class="btnn" onclick="removetext()">SEND MESSAGE</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 mt-4" data-aos="fade-up" data-aos-duration="1000">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119003.1250405812!2d72.86335200000002!3d21.23788879999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1692708155006!5m2!1sen!2sin"
+              style="border:0; width: 100%; height: 300px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py60oo font">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="logo">
+            <a class="color d-flex text-decoration-none" href="#"><i class="fa-brands fa-dropbox color me-2"
+                style="font-size: 35px;"></i>
+              <h4>Azire</h4>
+            </a>
+          </div>
+
+          <div class="textt mt-4">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nemo aperiam, fuga omnis odit ex!</p>
+            <div class="icon mt-4">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook " data-aos="flip-right" data-aos-delay="50"
+                  data-aos-duration="700"></i></a>
+              <a href="https://twitter.com/"> <i class="fa-brands fa-twitter" data-aos="flip-right" data-aos-delay="50"
+                  data-aos-duration="900"></i></a>
+              <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram" data-aos="flip-right" data-aos-delay="50"
+                  data-aos-duration="1100"></i></a>
+              <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin" data-aos="flip-right" data-aos-delay="50"
+                  data-aos-duration="13000"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4" data-aos="fade-up" data-aos-duration="1000">
+          <ul>
+            <li>
+              <h5>Product</h5>
+       
+            <li><a href="#service">Service</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#prising">Prisng</a></li>
+            <li><a href="#">demo</a></li>
+            <li><a href="#">demo</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4" data-aos="fade-up" data-aos-duration="1000">
+          <ul>
+            <li>
+              <h5>Categori</h5>
+            </li>
+            <li><a href="#testimonials">Testimonial</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+           
+            <li><a href="#">demo</a></li>
+            <li><a href="#">demo</a></li>
+            <!-- <li><a href="#">Employee Management</a></li> -->
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4" data-aos="fade-up" data-aos-duration="1000">
+          <ul>
+            <li>
+              <h5>Customer Service</h5>
+            </li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="term.html">Term & Conditions</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <!-- <li><a href="#">EnterPrise</a></li>
+            <li><a href="#">Employee Management</a></li> -->
+          </ul>
+        </div>
+        <div class="col-12">
+          <hr>
+          <div class="text-center">
+          </div>
+          <p class="text-center">copyright@ 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <div class="tep" > -->
+    <button onClick="call5()"><i className="fa-solid fa-arrow-up fa-beat-fade bbtt "></i></button>
+  <!-- </div> -->
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    // animation call
+    // start
+    AOS.init();
+    // end
+
+    // owl carousel
+
+    $('#first').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+
+
+    $('#two').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+
+    function removetext(){
+      document.getElementById("name").value=""
+      document.getElementById("email").value=""
+      document.getElementById("textarea").value=""
+      document.getElementById("subject").value=""
+    }
+    function call5() {
+      document.body.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+    // accordin
+    const items = document.querySelectorAll(".accordion button"); function toggleAccordion() { const itemToggle = this.getAttribute('aria-expanded'); for (i = 0; i < items.length; i++) { items[i].setAttribute('aria-expanded', 'false'); } if (itemToggle == 'false') { this.setAttribute('aria-expanded', 'true'); } } items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

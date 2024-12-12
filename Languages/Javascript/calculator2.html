@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="1">
+    <select name="main" id="2">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" id="3">
+    <h1 id="101"></h1>
+    <button onclick="call()">Answer</button>
+
+</body>
+<script>
+  
+    let d;
+
+   
+    function call(){
+
+    let a=document.getElementById("1").value;
+    let b=document.getElementById("2").value;
+    let c=document.getElementById("3").value;
+    if(b=="+"){
+      d=parseInt(a)+parseInt(c); 
+    }
+    if(b=="-"){
+       d=a-c; 
+    }
+    if(b=="*"){
+       d=a*c; 
+    }
+    if(b=="/"){
+       d=a/c; 
+    }
+    if(b=="%"){
+       d=a%c; 
+    }
+
+    document.getElementById("101").innerHTML=d;
+}
+
+</script>
+</html>

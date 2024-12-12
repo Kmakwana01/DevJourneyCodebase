@@ -1,0 +1,17 @@
+$maintext : #ff014f;
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l-s-10{
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+.maintext{
+    color: $maintext !important;
+    opacity: 1;
+}
+.o-h{
+    overflow: hidden;
+}

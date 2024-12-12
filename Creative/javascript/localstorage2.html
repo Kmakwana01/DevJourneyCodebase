@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>city</th>
+        </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+
+    </table>
+
+    <script>
+        // var arr = [];
+        var data = localStorage.getItem("key1");
+        data = JSON.parse(data);
+        // arr.push(data);
+        let tbody = document.getElementsByTagName("tbody")[0];
+        // console.log(arr)
+       for(let i=0; i<=data.length-1; i++){
+            tbody.innerHTML += `<tr>
+                <td>${data[i].Name}</td>
+                <td>${data[i].Email}</td>
+                <td>${data[i].Phone}</td>
+            </tr>` 
+       }
+    </script>
+</body>
+</html>

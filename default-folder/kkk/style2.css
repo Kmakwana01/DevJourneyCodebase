@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    margin: 0 !important;
+    padding: 0;
+}
+header{
+    position: relative;
+    padding: 0px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+}
+.logo{
+    width: 10%;
+
+}
+.logo span{
+    font-size: 30px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.menu>li{
+    padding-right: 80px;
+    display: inline-block;
+}
+.menu li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.megamenu{
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out .5s;
+}
+header ul li:hover .megamenu{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.megamenu ul li{
+    list-style-type: none;
+    line-height: 30px;
+    color: white;
+}
+.megamenu ul li a{
+    color: white;
+}
+.uui{
+    background-color: black;
+}
+.icon{
+    font-size: 25px;
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .megamenu{
+        display: none;
+    }
+    .menu{
+        left: -100%;
+        position:absolute;
+        display: block;
+        width: 100%;
+        top: 100%;
+        /* bottom: 100%; */
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        color: white;
+        transition: all ease-in-out .5s !important;
+    }
+    ul{
+        padding-left: 0 !important; 
+    }
+    .menu li{
+        padding-right: 0px;
+        display: block;
+        line-height: 28px;
+        text-align: center;
+    }
+    .icon{
+        margin-right: 30px;
+        display: flex;
+    }
+    ul,li{
+        margin: 0;
+        padding: 0;
+    }
+    .btn{
+        transition: .5s;
+        left: 0;
+    }
+}
+

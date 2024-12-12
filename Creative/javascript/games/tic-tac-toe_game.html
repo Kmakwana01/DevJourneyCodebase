@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            margin: auto;
+            width: 360px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .main button {
+            width: 120px;
+            border: 1px solid black;
+            height: 120px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <button id="v1" class="btn1" onclick="f(this)"></button>
+            <button id="v2" class="btn1" onclick="f(this)"></button>
+            <button id="v3" class="btn1" onclick="f(this)"></button>
+        </div>
+        <div class="row">
+            <button id="v4" class="btn1" onclick="f(this)"></button>
+            <button id="v5" class="btn1" onclick="f(this)"></button>
+            <button id="v6" class="btn1" onclick="f(this)"></button>
+        </div>
+        <div class="row">
+            <button id="v7" class="btn1" onclick="f(this)"></button>
+            <button id="v8" class="btn1" onclick="f(this)"></button>
+            <button id="v9" class="btn1" onclick="f(this)"></button>
+        </div>
+        <h1 style="text-align: center;">Tic Toe Game</h1>
+    </div>
+    <script>
+        let h1 = document.getElementsByTagName("h1")[0];
+        let btn1 = document.getElementsByClassName("btn1");
+        let n = 0;
+
+        function f(t) {
+            // console.log(v1.innerHTML)
+
+            if (t.innerHTML == "") {
+                if (n == 0) {
+                    t.innerHTML = "O";
+                    n = 1;
+                } else {
+                    // t.innerHTML = "X"
+                    // n = 0;
+                    // rr1();
+                }
+            }
+
+            let v1 = document.getElementById("v1").innerHTML
+            let v2 = document.getElementById("v2").innerHTML
+            let v3 = document.getElementById("v3").innerHTML
+            let v4 = document.getElementById("v4").innerHTML
+            let v5 = document.getElementById("v5").innerHTML
+            let v6 = document.getElementById("v6").innerHTML
+            let v7 = document.getElementById("v7").innerHTML
+            let v8 = document.getElementById("v8").innerHTML
+            let v9 = document.getElementById("v9").innerHTML
+
+            let btn = document.getElementsByTagName("button");
+            function rr1() {
+                let num = Math.floor(Math.random() * 10);
+
+                for (let i = 0; Infinity; i++) {
+                    if (btn1[num].innerHTML === "") {
+                        btn1[num].innerHTML = "X";
+                        break;
+                    } else {
+                        num = Math.floor(Math.random() * 10);
+                        // console.log(num)
+                    }
+                }
+            }
+
+           
+
+           if(n==0 || n==1){
+            if ((v1 == "O" && v2 == "O" && v3 == "O") || (v4 == "O" && v5 == "O" && v6 == "O") || (v7 == "O" && v8 == "O" && v9 == "O") || (v1 == "O" && v4 == "O" && v7 == "O") || (v2 == "O" && v5 == "O" && v8 == "O") || (v3 == "O" && v6 == " " && v9 == " O") || (v1 == "O" && v5 == "O" && v9 == "O") || (v3 == "O" && v5 == "O" && v7 == "O")) {
+                h1.innerHTML = "O - Win"
+                for (let i = 0; i <= btn.length; i++) {
+                    btn[i].onclick = ""
+                    // clearInterval(interval)
+                }
+            }
+
+            if ((v1 == "X" && v2 == "X" && v3 == "X") || (v4 == "X" && v5 == "X" && v6 == "X") || (v7 == "X" && v8 == "X" && v9 == "X") || (v1 == "X" && v4 == "X" && v7 == "X") || (v2 == "X" && v5 == "X" && v8 == "X") || (v3 == "X" && v6 == " " && v9 == " X") || (v1 == "X" && v5 == "X" && v9 == "X") || (v3 == "X" && v5 == "X" && v7 == "X")) {
+                h1.innerHTML = "X - Win"
+                for (let i = 0; i <= btn.length; i++) {
+                    btn[i].onclick = ""
+                    // clearInterval(interval)
+
+                }
+            }
+           }
+
+           let interval = setInterval(() => {
+                if (n == 1) {
+                    rr1();
+                }
+                n = 0;
+
+            }, 2000)
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

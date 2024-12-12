@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button onclick="upper()">ToUpperCase</button>
+    <button onclick="lower()">ToLowerCase</button>
+
+    <p id="ptag"></p>
+    <script>
+        function upper(){
+            text = document.getElementById("text")
+            demo = document.getElementById("ptag")
+            demo.innerHTML= text.value.toUpperCase();
+            // alert()
+        }
+        function lower(){
+            text = document.getElementById("text")
+            demo = document.getElementById("ptag")
+            demo.innerHTML= text.value.toLowerCase();
+            // alert()
+        }
+    </script>
+</body>
+</html>

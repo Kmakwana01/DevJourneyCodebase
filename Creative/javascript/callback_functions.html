@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a,b,n,op;
+        a = parseInt(prompt("enter a"));
+        op = prompt("enter your operator");
+        b = parseInt(prompt("enter b"));
+
+        let sum = (a,b,ans) =>{
+            n = a+b;
+            ans(n);
+        }
+        let subtraction = (a,b,ans)=>{
+            n = a-b;
+            ans(n);
+        }
+        let devide=(a,b,ans)=>{
+            n = a/b;
+            ans(n);
+        }
+        let multification=(a,b,ans)=>{
+            n=a*b;
+            ans(n);
+        }
+        let ans=(n=>{
+            console.log(n)
+        })
+
+        if(op=="+"){
+            sum(a,b,ans);
+        }else if(op=="-"){
+            subtraction(a,b,ans);
+        }else if(op=="/"){
+            devide(a,b,ans);
+        }else if(op=="*"){
+            multification(a,b,ans);
+        }
+
+    </script>
+</body>
+</html>

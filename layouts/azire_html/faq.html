@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg position-sticky top-0"
+    style="background-color: #fff; z-index: 700;     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+    <div class="container vv">
+      <a class="navbar-brand color center ff" href="#"><i class="fa-brands fa-dropbox color me-2"
+          style="font-size: 35px;"></i>
+        <h4>Azire</h4>
+      </a>
+      <button class="navbar-toggler color" type="button">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#service">Services<i class="fa-solid fa-chevron-down arrow"></i></a>
+            <ul class="menu">
+              <li><a href="#">demo</a></li>
+              <li><a href="#">demo</a></li>
+              <li><a href="#">demo</a></li>
+              <li><a href="#">demo</a></li>
+              <li><a href="#">demo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="index.html#team">
+              Team
+            </a>
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#prising">Prising</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#testimonials">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <section class="main1 font ">
+
+    <div id="myNav" class="overlay " style="z-index: 999;">
+      <div class="d-flex s-b p-10"> <a href="#" class="d-flex align-items-center"><i
+            class="fa-brands fa-dropbox color me-2 " style="font-size: 35px;"></i>
+          <h4 class="color">Azire</h4>
+        </a> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-arrow-left color"
+            style="font-size: 25px; margin-right: 11px; ;"></i></a></div>
+      <div class="overlay-content">
+        <div class="container bbbf" style="margin: auto; ">
+          <div class="accordion accordion shadow bg-white" style="padding: 15px;">
+            <div class="accordion-item"><a href="index.html"><span>Home</span></a>
+
+            </div>
+            <!-- <div class="accordion-item"> <button id="accordion-button-2" aria-expanded="false"><span
+                  class="accordion-title">Service</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <ul class="menu">
+                  <li><a href="#">Web Developing</a></li>
+                  <li><a href="#">App Developing</a></li>
+                  <li><a href="#">UI/UX Design</a></li>
+                  <li><a href="#">Graphics Design</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="accordion-item"> <button id="accordion-button-2" aria-expanded="false"><span
+                  class="accordion-title">Team</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <ul>
+                  <li><a href="ngh.html">demo</a></li>
+                  <li><a href="ngh.html">demo</a></li>
+                  <li><a href="ngh.html">demo</a></li>
+                  <li><a href="ngh.html">demo</a></li>
+                  <li><a href="ngh.html">demo</li>
+                </ul>
+              </div>
+
+            </div> -->
+            <div class="accordion-item"><a href="index.html#service" onclick="closeNav()"><span>Service</span></a></div>
+            <div class="accordion-item"><a href="index.html#team" onclick="closeNav()"><span>Team</span></a></div>
+            <div class="accordion-item"><a href="index.html#prising" onclick="closeNav()"><span>Prising</span></a></div>
+            <div class="accordion-item"><a href="index.html#testimonials" onclick="closeNav()"><span>Testimonial</span></a></div>
+            <div class="accordion-item"><a href="index.html#contact" onclick="closeNav()"><span>Contact Us</span></a></div>
+            <div class="accordion-item"><a href="term.html" onclick="closeNav()"><span>Terms & Conditions</span></a></div>
+            <div class="accordion-item"><a href="privacy.html" onclick="closeNav()"><span>Privacy & Policy</span></a></div>
+            <div class="accordion-item"><a href="faq.html" onclick="closeNav()"><span>FAQs</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+        <div class="row">
+            <div class="text-center mt-4">
+                <h1>FAQs</h1>
+                <div class="shape2"></div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <button class="accordion11">1. What topics does your blog cover in the Home Furnishing category?</button>
+            <div class="panel11">
+                <p>Our Home Furnishing category explores a wide range of topics, including interior design tips, furniture recommendations, home decor ideas, and advice on creating a comfortable and stylish living space.</p>
+            </div>
+            
+            <button class="accordion11">2. Can I find travel recommendations or guides on your blog?</button>
+            <div class="panel11">
+              <p>Absolutely! Our Travel section offers travel guides, destination recommendations, packing tips, and travel stories to inspire and assist you in planning your next adventure.</p>
+            </div>
+            
+            <button class="accordion11">3. What kind of technology content can I expect on your blog?</button>
+            <div class="panel11">
+              <p>In our Technology category, we delve into the latest tech trends, gadget reviews, software recommendations, and provide insights on how technology impacts our daily lives.</p>
+            </div>
+            <button class="accordion11">4. Do you have content related to architecture and home design?</button>
+            <div class="panel11">
+              <p>Yes, we do! Our Architecture category covers architectural styles, home design principles, building tips, and architectural innovations to help you create your dream living space.</p>
+            </div>
+            <button class="accordion11">5. How does your blog address topics related to lifestyle?</button>
+            <div class="panel11">
+              <p>Our Lifestyle category explores a variety of lifestyle aspects, including wellness, personal development, fitness, fashion, and general life advice to help you live your best life.</p>
+            </div>
+            <button class="accordion11">6. Do you provide product recommendations for home furnishing, technology, and lifestyle products?</button>
+            <div class="panel11">
+                <p>Yes, we often share product recommendations and reviews in our respective categories. You'll find suggestions for top-quality home furnishing items, the latest gadgets, and lifestyle products to enhance your everyday living.</p>
+              </div>
+            <button class="accordion11">7. How frequently is new content published in each category?</button>
+            <div class="panel11">
+                <p>We strive to provide fresh content regularly. New articles are typically published in each category [mention your posting schedule, e.g., "once a week"] to keep you updated on the latest trends, tips, and advice in the respective fields.
+                    These FAQs provide a clear overview of what your blog covers in each category and offer information on how users can engage with your content or collaborate with your platform. Feel free to customize and expand upon these questions as needed to suit your blog's unique focus and audience.</p>
+              </div>
+        </div>
+    </div>
+
+    <footer class="py60oo font" style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4" >
+              <div class="logo">
+                <a class="color d-flex text-decoration-none" href="#"><i class="fa-brands fa-dropbox color me-2"
+                    style="font-size: 35px;"></i>
+                  <h4>Azire</h4>
+                </a>
+              </div>
+              <div class="textt mt-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nemo aperiam, fuga omnis odit ex!</p>
+                <div class="icon mt-4">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook " ></i></a>
+                    <a href="https://twitter.com/"> <i class="fa-brands fa-twitter" ></i></a>
+                    <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4">
+              <ul>
+                <li>
+                  <h5>Product</h5>
+           
+                <li><a href="index.html#service">Service</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#prising">Prisng</a></li>
+                <li><a href="#">demo</a></li>
+                <li><a href="#">demo</a></li>
+                
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4" >
+              <ul>
+                <li>
+                  <h5>Categori</h5>
+                </li>
+                <li><a href="index.html#testimonials">Testimonial</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+               
+                <li><a href="#">demo</a></li>
+                <li><a href="#">demo</a></li>
+                <!-- <li><a href="#">Employee Management</a></li> -->
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4" >
+              <ul>
+                <li>
+                  <h5>Customer Service</h5>
+                </li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="term.html">Term & Conditions</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <!-- <li><a href="#">EnterPrise</a></li>
+                <li><a href="#">Employee Management</a></li> -->
+              </ul>
+            </div>
+            <div class="col-12">
+              <hr>
+              <div class="text-center">
+              </div>
+              <p class="text-center">copyright@ 2023</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/jquery-3.7.0.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="js/jquery.js"></script>
+      <script>
+    
+    
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        // animation call
+        // start
+        AOS.init();
+        // end
+    
+        // owl carousel
+    
+        function removetext(){
+          document.getElementById("name").value=""
+          document.getElementById("email").value=""
+          document.getElementById("textarea").value=""
+          document.getElementById("subject").value=""
+        }
+        function call5() {
+          document.body.scrollIntoView({
+            behavior: "smooth"
+          });
+        }
+        // accordin
+        const items = document.querySelectorAll(".accordion button"); function toggleAccordion() { const itemToggle = this.getAttribute('aria-expanded'); for (i = 0; i < items.length; i++) { items[i].setAttribute('aria-expanded', 'false'); } if (itemToggle == 'false') { this.setAttribute('aria-expanded', 'true'); } } items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        var acc11 = document.getElementsByClassName("accordion11");
+var j;
+
+for (j = 0; j < acc11.length; j++) {
+  acc11[j].addEventListener("click", function() {
+    this.classList.toggle("active11");
+    var panel11 = this.nextElementSibling;
+    if (panel11.style.maxHeight) {
+      panel11.style.maxHeight = null;
+    } else {
+      panel11.style.maxHeight = panel11.scrollHeight + "px";
+    } 
+  });
+}
+    
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+</html>

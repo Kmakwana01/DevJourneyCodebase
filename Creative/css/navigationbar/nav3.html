@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            height: 90px;
+            min-width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        ul{
+         margin: 0;
+         padding: 0;
+        }
+        .menubar{
+        }
+        .main li{
+            list-style: none;
+            display: inline-block;
+            /* position: relative; */
+            background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+
+        }
+        .main li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            display: block;
+            padding: 15px 25px;
+
+            /* position: absolute; */
+        }
+        .submenu{
+            display: none;
+            position: absolute;
+         margin: 0;
+         padding: 0;
+     
+        }
+        .submenu li{
+            display: block;
+            position: relative;
+        }
+        .main li:hover .submenu,.submenu li:hover .petamenu ,.petamenu li:hover .menu{
+          
+            display: block;
+            /* left: 100%; */    
+        }
+        .main li a:hover{
+            background-color: #FC466B;
+        }
+        .petamenu{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+        .menu{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="menubar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul class="submenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a>
+                            <ul class="petamenu">
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">ABOUT</a>
+                                    <ul class="menu">
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Detail</a>
+                    <ul class="submenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a>
+                            <ul class="petamenu">
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

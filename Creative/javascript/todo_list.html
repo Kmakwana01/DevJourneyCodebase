@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" onsubmit="val(); return false" name="form">
+        <label for="#">Name</label>
+        <input type="text" name="name"><br><br>
+        <label for="#">Email</label>
+        <input type="text" name="email"><br><br>
+        <label for="#">Phone</label>
+        <input type="text" name="phone"><br><br>
+        <button type="submit" formtarget="_blank">add</button>
+        <button type="reset" >reset</button><br><br>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <button onclick="Delete()">Delet</button>
+    <script>
+        // let cnt = 0;
+        const val = () =>{
+            let name = document.form.name.value;
+            let email = document.form.email.value;
+            let phone = document.form.phone.value;
+            // console.log(name,email,phone)
+            let tbody = document.querySelector("tbody")
+            tbody.innerHTML += `<tr class="a1">
+                <td>${name}</td>
+                <td>${email}</td>
+                <td>${phone}</td>
+                <td class="demo"><input class="check" type="checkbox"></td>
+                </tr>`
+                // cnt++;
+                // <td><button onclick="Delete(${cnt})">Delet</button></td>
+            }
+        const Delete = () =>{
+        //   document.querySelectorAll("tr")[n-1].innerHTML=""
+        let a1 = document.getElementsByClassName("a1");
+        let check = document.getElementsByClassName("check");
+        let arr=[]
+       
+        for(i=0; i<a1.length ; i++){
+                    if(check[i].checked){
+                        // a1[i].innerHTML="";
+                        a1[i].remove();
+                        // continue;
+                        // arr.push(i)
+                        i--;
+                        // console.log(arr)
+                  }
+        }
+        // for(let j=0; j<arr.length; j++){
+        //             let a = arr[j];
+        //             console.log(a)
+        //             a1.innerHTML=""
+        //             a1[a].remove()
+        //           }
+        
+        //    n.parentElement.parentElement.innerHTML = ""
+            // let check=document.querySelectorAll(".check").checked 
+            // if(check){
+            //     alert("check")
+            // }
+            // else{
+            //     alert("not")
+            // }
+        }   
+    </script>
+</body>
+</html>

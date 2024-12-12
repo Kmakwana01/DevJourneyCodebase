@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigationbar</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: black;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            /* float: right; */
+        }
+        li a{
+            display: block;
+            color:white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.green{
+            background-color: white;
+            color:black;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        a:hover:not(.green){
+            background-color:white;
+            color: black;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    
+        
+            <ul>
+               <li><a class="green" href="#home">Home</a></li>
+               <li><a href="#News">News</a></li>
+               <li><a href="#Contact">Contact</a></li>
+               <li><a href="#About">About</a></li>
+            </ul>
+            <div style="margin-left: 15%;padding: 0px 0px; height: px; text-align: center;background-color: aquamarine; height: 1000px;">
+            <h1>Heading 1</h1>
+            </div>
+            
+            <div style="margin-left: 15%;">
+                <li>
+                <img src="p1.jpg">
+                <img src="p2.jpg">
+                </li>
+            </div>
+            
+        
+    
+</body>
+</html>

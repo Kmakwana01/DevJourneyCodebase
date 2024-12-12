@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+let a=new Promise(function(resolve,reject){
+    console.log("pending");
+    setTimeout(function(){
+        console.log("promise is exicuted");
+        resolve(567)
+        // reject(new Error("this is error"));
+    },3000)
+})
+// console.log(a);
+a.then((value)=>{
+    console.log(value);
+    return new Promise((resolve, reject) => {
+        setTimeout(function(){
+            console.log(value+6);
+            resolve(777);
+        })
+    })
+}).then((value)=>{
+    console.log(value);
+ return new Promise((resolve, reject) => {
+    resolve("hey khushal")
+ })
+}).then((value)=>{
+    console.log(value);
+    resolve("asdf")
+})
+console.error("Asdf");
+// console.log(a);
+</script>
+</html>

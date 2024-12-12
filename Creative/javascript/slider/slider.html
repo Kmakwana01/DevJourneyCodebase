@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .slider {
+            position: relative;
+        }
+
+        .slider>.img {
+            width: 100%;
+        }
+
+        .dot {
+            width: 100%;
+            bottom: 30px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dot>img {
+            margin: 3px;
+            width: 150px;
+        }
+
+        .prev{
+            padding: 10px;
+            border: none !important;
+            top: 47%;
+            z-index: 1;
+            position: absolute;
+            transition: .3s;
+            cursor: pointer;
+        }
+        .next{
+            padding: 10px;
+            border: none !important;
+            top: 47%;
+            right: 0;
+            z-index: 1;
+            position: absolute;
+            transition: .3s;
+            cursor: pointer;
+        }
+        .next:hover,.prev:hover{
+            background: black;
+            color: white;
+        }
+        @media screen and (max-width:900px){
+            .dot{
+                display: none;
+            }
+            .next,.prev{
+                top: 43%;
+            }
+        }
+        @media screen and (max-width:576px){
+            .next,.prev{
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <img src="image/s1.jpg" class="img" alt="">
+        <img src="image/s2.webp" class="img" alt="">
+        <img src="image/s3.jpg" class="img" alt="">
+        <img src="image/s4.jpg" class="img" alt="">
+        <img src="image/s5.webp" class="img" alt="">
+        <button class="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="dot">
+            <img src="image/s1.jpg" onclick=smimg(0) class="smallimg" alt="">
+            <img src="image/s2.webp" onclick=smimg(1) class="smallimg" alt="">
+            <img src="image/s3.jpg" onclick=smimg(2) class="smallimg" alt="">
+            <img src="image/s4.jpg" onclick=smimg(3) class="smallimg" alt="">
+            <img src="image/s5.webp" onclick=smimg(4) class="smallimg" alt="">
+        </div>
+
+    </div>
+
+
+    <script>
+        let cnt = 0;
+        let cnt2=0
+        let img1 = document.getElementsByClassName("img");
+        let small_img = document.getElementsByClassName("smallimg");
+
+        function show() {
+            for (let i = 0; i < img1.length; i++) {
+                img1[i].style.display = "none";
+
+                if (cnt == img1.length) {
+                    cnt = 0
+                }
+                if (cnt == -1) {
+                    cnt = img1.length - 1
+                }
+                console.log(cnt)
+
+            }
+            img1[cnt].style.display = "block";
+            for (let i = 0; i <= img1.length-1; i++) {
+                small_img[i].style.opacity = 0.3;
+            }
+            small_img[cnt].style.opacity = 1;
+            cnt = n;
+        }
+
+        window.onload = function () {
+            show();
+            smimg()
+        }
+
+        function next() {
+            cnt++;
+            show();
+        }
+
+        function prev() {
+            cnt--;
+            show();
+
+        }
+
+        function smimg(n=0) {
+            for (let i = 0; i <= img1.length-1; i++) {
+                small_img[i].style.opacity = 0.3;
+            }
+            small_img[n].style.opacity = 1;
+            cnt = n;
+            show();
+        }
+        setInterval(()=>{
+            next();
+        },2500)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch</title>
+</head>
+<style>
+    .watch {
+        color: tomato;
+        text-align: center;
+        font-size: 80px;
+    }
+</style>
+
+<body onload="watchcall()">
+    <div class="watch"></div>
+</body>
+<script>
+    function watchcall() {
+        var date = new Date();
+
+        var a = date.getHours();
+        var b = date.getMinutes();
+        var c = date.getSeconds();
+
+        a = a < 10 ? "0" + a : a;
+        b = b < 10 ? "0" + b : b;
+        c = c < 10 ? "0" + c : c;
+
+        if (a > 12) {
+            a = a - 12;
+        }
+        var q = "Am"
+        if (a <= 12) {
+            q = "PM";
+        }
+
+        var z = a + "::" + b + "::" + c + " " + q;
+
+        document.getElementsByClassName("watch")[0].innerHTML = z;
+        setInterval(watchcall, 1000); ///setTimeout
+    }
+</script>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .calculator {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+    }
+
+    #display {
+      width: 92%;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: right;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d3d3d3;
+    }
+
+    .clear {
+      background-color: #ff7043;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calculator">
+    <input type="text" id="display">
+    <div class="buttons">
+      <button value="7" class="calc">7</button>
+      <button value="8" class="calc">8</button>
+      <button value="9" class="calc">9</button>
+      <button value="/" class="calc">/</button>
+      <button value="4" class="calc">4</button>
+      <button value="5" class="calc">5</button>
+      <button value="6" class="calc">6</button>
+      <button value="*" class="calc">*</button>
+      <button value="1" class="calc">1</button>
+      <button value="2" class="calc">2</button>
+      <button value="3" class="calc">3</button>
+      <button value="-" class="calc">-</button>
+      <button value="0" class="calc">0</button>
+      <button value="." class="calc">.</button>
+      <button value="=" class="calc">=</button>
+      <button value="+" class="calc">+</button>
+      <button value="c" class="calc">C</button>
+    </div>
+  </div>
+
+  <script>
+    let display = document.getElementById("display");
+    let string, ans;
+    let click = document.querySelectorAll(".calc");
+    Array.from(click).forEach((button) => {
+      button.addEventListener("click", (e) => {
+        if (e.target.value == "=") {
+          // alert();
+          // display=parseInt(display)
+          let ans = display.value;
+          ans = eval(ans);
+          console.log(ans)
+          display.value = ans;
+          // document.getElementById("display").vaule=string
+        }
+        else if (e.target.value == "c") {
+          display.value = ""
+        }
+        else {
+          string = e.target;
+          console.log(string)
+          let j = document.getElementById("display").value += string.value;
+          // j=parseInt(j)
+          // console.log(j)
+        }
+
+      })
+    })
+  </script>
+
+</body>
+
+</html>

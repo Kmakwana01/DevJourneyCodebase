@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        .img{
+            background-image: url(madeira-island.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 800px;
+
+        }
+        .main{
+          background: transparent;
+            width: 100%;
+            height: 60px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            font-weight: 700;
+        }
+        .main li a{
+            padding: 15px 30px;
+            display: block;
+        }
+        .menubar li{
+            list-style: none;
+            display: inline-block;
+            /* position: relative; */
+        }
+        .menubar li a{
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            /* padding: 15px 30px; */
+        }
+        .submenu{
+            display: none;
+            position: absolute;
+           margin: 0;
+           padding: 0;
+           border-radius: 10%;
+            
+        }
+        .submenu li{
+            display: block;
+            position: relative;
+          
+        }
+        .main li:hover .submenu{
+            display: block;
+        }
+        .submenu li:hover .petamenu{
+            display: block;
+        }
+        
+        .menubar li a:hover{
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+       
+        .petamenu{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: none;
+            /* border: 2px solid black; */
+            /* border-radius: 30%; */
+        }
+        .petamenu li{
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <ul class="menubar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a>
+                    <ul class="submenu">
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">News</a>
+                        <ul class="petamenu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </li>
+                      <li><a href="#">News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Detail</a></li>
+                <li><a href="#">Blog</a>
+                    <ul class="submenu">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">News</a>
+                          <ul class="petamenu">
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">About</a></li>
+                          </ul>
+                      </li>
+                        <li><a href="#">News</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Address</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="img"></div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    .row{
+        width: 100%;
+        text-align: center;
+        /* height: auto; */
+        /* overflow: hidden; */
+    }
+   
+   
+    .box1{
+    width: 25%;
+    float: left;
+    /* overflow:hidden ; */
+  position: relative;
+      
+    }
+    .box1 img,.box2 img{
+    width: 95%;
+    height: 95%;
+
+    /* margin-top: 20px; */
+    box-shadow: 1px 1px 10px black;
+    transition: all ease-in-out 0.3s;
+  
+}
+    .box1:hover img{
+        transform: scale(0.9);
+        /* transform-origin: center; */
+    } 
+    .box1:hover h4{
+       bottom: -40px;
+        opacity: 1;
+    }  
+    h4{
+        position: absolute;
+        bottom: 0;
+        color: grey;
+        opacity: 0;
+        transition: all ease-in-out.5s;
+        text-align: center;
+        /* margin: auto; */
+        left: 110px;
+        font-size: 20px;
+    }
+    .clear{
+        clear: both;
+    }
+
+    .box2{
+    width: 33.33%;
+    float: left;
+    overflow:hidden ;
+  /* position: relative; */
+      
+    }
+
+    .box2:hover img{
+        transform: rotate(10deg) scale(1.5);
+        transform-origin: center;
+    } 
+    .box2:hover h4{
+       /* bottom: -40px; */
+       color: brown;
+      
+    }  
+
+</style>
+<body>
+   <h1>Cars</h1>
+    <!-- <div class="main"> -->
+        <div class="row">
+            <div class="box1">
+                <img src="/css/parallex/image/1.jpg" alt="nature">
+                <h4>Click Here</h4>
+                <!-- <div><a href="image/i.webp">Click Here</a></div> -->
+            </div>
+            <div class="box1">
+                <img src="/css/parallex/image/2.jpg" alt="nature2">
+                <h4>Click Here</h4>
+
+               <!-- <div> <a href="image/nature2.webp">Click Here</a></div> -->
+            </div>
+            <div class="box1">
+                <img src="/css/parallex/image/3.jpg" alt="nature2">
+                <h4>Click Here</h4>
+
+               <!-- <div> <a href="image/nature11.webp">Click Here</a></div> -->
+            </div>
+            <div class="box1">
+                <img src="/css/parallex/image/4.jpg" alt="nature2">
+                <h4>Click Here</h4>
+
+               <!-- <div> <a href="image/nature3.webp">Click Here</a></div> -->
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- row 2 -->
+        <h1>Birds</h1>
+        <div class="row">
+            <div class="box2">
+                <img src="/css/p2/image/birds0.jpg" alt="nature">
+                <h4>Click Here</h4>
+                <!-- <div><a href="image/i.webp">Click Here</a></div> -->
+            </div>
+            <div class="box2">
+                <img src="/css/p2/image/birds1.jpg" alt="nature2">
+                <h4>Click Here</h4>
+
+               <!-- <div> <a href="image/nature2.webp">Click Here</a></div> -->
+            </div>
+            <div class="box2">
+                <img src="/css/p2/image/birds6.png" alt="nature2">
+                <h4>Click Here</h4>
+
+               <!-- <div> <a href="image/nature11.webp">Click Here</a></div> -->
+            </div>
+        </div>
+
+</body>
+</html>

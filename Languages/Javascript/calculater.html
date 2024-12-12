@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clculater</title>
+    <link rel="stylesheet" href="style.js">
+</head>
+
+<body>
+    <input type="text" id="101">
+    <select name="opt" id="102">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    
+    <input type="text" id="103">
+    <button onclick="call()">Click</button>
+    <h1></h1>
+</body>
+<script>
+    function call(){
+        var a=document.getElementById("101").value;
+        var b=document.getElementById("102").value;
+        var c=document.getElementById("103").value;
+       
+        if(b=="+"){
+            z=parseInt(a)+parseInt(c);
+        }
+        if(b=="-"){
+            z=a-c;
+           
+        }
+        if(b=="*"){
+            z=a*c;
+        }
+        if(b=="/"){
+            z=a/c;
+        }
+        if(b=="%"){
+            z=a%c;
+        }
+        document.getElementsByTagName("h1")[0].innerHTML=z;
+
+    }
+    
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="demo" onmouseenter="enter()" onmouseleave="leave()"></div> -->
+    <div id="demo" onmousedown="enter()" onmouseup="leave()"></div>
+
+</body>
+<script>
+    let ref=document.getElementById('demo');
+
+    // function type
+
+    // function enter(){
+    //    ref.style.backgroundColor='red';
+    // }
+    // function leave(){
+    //    ref.style.backgroundColor='';
+    // }
+
+    // addeventlisener 
+
+    // ref.addEventListener("onmouseenter",enter=()=>{
+    //     // alert('jhg')
+    //     ref.style.backgroundColor='red';
+    // })
+    // ref.addEventListener("onmouseleave",leave=()=>{
+    //     // alert('jhg')
+    //     ref.style.backgroundColor='';
+    // })
+
+
+    // mouse down and up
+
+       function enter(){
+          ref.style.backgroundColor='red';
+       }
+       function leave(){
+          ref.style.backgroundColor='';
+       }
+</script>
+</html>

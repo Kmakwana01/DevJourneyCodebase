@@ -1,0 +1,113 @@
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+       </head>
+       <body>
+        <div class="">
+        <div class="container">
+            <div class="row">
+        <header class="head">
+            <div class="logo center m-4">
+                <span>Logo</span>
+            </div>
+            <nav class="center">
+                <ul class="menu" id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a>
+                        <div class="megamenu">
+                            <div class="mmm">
+                                <ul>
+                                    <li><h3>Maths</h3></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="mmm">
+                                <ul>
+                                    <li><h3>English</h3></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="mmm">
+                                <ul>
+                                    <li><h3>Science</h3></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="mmm">
+                                <ul>
+                                    <li><h3>psychology</h3></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+            <div class="icon center">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <span class="line"></span> -->
+            </div>
+
+        </header>
+        </div>
+        </div>
+        </div>
+        <script>
+        
+        </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="style.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.icon').click(function(){
+            $('.menu').toggleClass("btn");
+        })
+    })
+
+    let a=document.getElementById("menu").getElementsByTagName("li");
+    console.log(a);
+    Array.from(a).forEach((item)=>{
+        item.addEventListener("click",()=>{
+            // let h=document.getElementsByClassName("head")[0].getElementsByTagName("ul").getElementsByTagName("li");
+                document.getElementsByClassName("megamenu").style.top="100%";
+                document.getElementsByClassName("megamenu").style.opacity="1";
+                document.getElementsByClassName("megamenu").style.visibility="visible";
+                alert("adf")
+        })
+    })
+</script>
+
+       </body>
+       </html>

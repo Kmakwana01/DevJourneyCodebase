@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #3b5998;
+    height: 70px;
+    width: 100%;
+}
+input[type="password"]:hover{
+    border: 2px solid black;
+}
+input[type="text"]:hover{
+    border: 2px solid black;
+}
+input[type="radio"]:hover{
+    border: 4px solid black;
+}
+input[type="checkbox"]:hover{
+    border: 4px solid black;
+}
+input[type="submit"]:hover{
+    border: 2px solid black;
+}
+   
+.faceb{
+    font-family: 'Black Han Sans';
+    font-size: 33px;
+    color: white;
+    /* border: 1px solid black; */
+    padding-top: 17px;
+    height: 70px;
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.ok{
+    padding-top:5px;
+}
+.login{
+    float: left;
+    width: 50%;
+    height: 70px;
+    /* border: 1px solid black; */
+    padding-left: 37%;
+    padding-top: 3px;
+}
+.login2{
+    width: 20%;
+    height: 60px;
+    float: left;
+    padding-top: 3px;
+    padding-left: 15px;
+}
+.ok2{
+    padding-top:3px;
+}
+.user{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+img{
+
+    height: 400px;
+    width: 62%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    float: left;
+    
+ 
+    /* /* border: 1px solid black; */
+
+}
+.user{
+    background: linear-gradient(120deg,#3b5998,#FFFFFF);
+}
+.acc{
+    float: left;
+    width: 38%;
+    height: 400px;
+    padding: 30px;
+}
+/* input[type="text"]{
+    border: 1px solid black;
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 9px;
+    margin-right: 9px;
+} */
+
+.a{
+    border: 1px solid black;
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 9px;
+    margin-right: 9px;
+}
+.b{
+    display: inline;
+    margin: px;
+}
+h4{
+    padding-bottom: 6px;
+}
+.age{
+    padding-bottom: 7px;
+}
+h3{
+    background-color: #008000;
+    color: white;
+    height: 30px;
+    text-align: center;
+    padding-top: 3px;
+    width: 180px;
+    box-shadow: 20px 20px 50px green;
+}
+.b h3:hover{
+    background-color: #3b5998;
+    cursor: pointer;
+    box-shadow: 20px 20px 50px #3b5998;
+    border: 2px solid black;
+    text-align: center;
+}
+   
+
+.footer{
+    height: 200px;
+    /* border: 1px solid black; */
+    width: auto;
+    text-align: center;
+   
+    margin-left: 120px;
+    margin-right: 120px;
+} 
+    
+.footer p{
+    padding-top: 18px;
+    word-spacing: 15px; 
+}

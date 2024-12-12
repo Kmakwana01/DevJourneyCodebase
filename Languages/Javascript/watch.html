@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            font-size: 80px;
+            color: grey;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="call()">
+    <div class="demo"></div>
+    <!-- <button onclick="call()">click</button> -->
+
+</body>
+<script>
+
+
+
+
+
+    function call() {
+        var date = new Date();
+        var a = date.getHours();
+        var b = date.getMinutes();
+        var c = date.getSeconds();
+
+        var time = a + "::" + b + "::" + c;
+        document.getElementsByClassName("demo")[0].innerHTML = time;
+        setTimeout(call, 1000);
+    }
+
+</script>
+
+</html>

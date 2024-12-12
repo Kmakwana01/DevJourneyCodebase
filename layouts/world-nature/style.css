@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    color: white;
+    box-sizing: border-box;
+    background-color: #000814;
+    background: transparent;
+}
+input[type="search"]{
+    border-radius: 50px;
+}
+.nav-item .nav-link{
+    color: white !important;
+    /* position: absolute; */
+}
+.nav-item .nav-link:hover{
+    color: black !important;
+    /* border-bottom: 1px solid white; */
+}
+.d-flex .form-control:active{
+  outline: none !important;
+}
+.main{
+    /* height: 500px; */
+    background-image: url(nature1.jpg);
+    width: 100%;
+}
+.page1{
+    text-align: center;
+}
+.page1 h1{
+    font-size: 2.5rem;
+    color: white;
+    font-family: cursive;
+}
+.page1 p{
+    color: white;
+    font-size: 20px;
+}
+.page1 .btn{
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    transition: 1s;
+}
+.page1 .btn:hover{
+    background-color: #1b263b;
+    color: white;
+}
+.info2 h1 ,.info2 p{
+    color: white !important ;
+    font-weight: 700;
+}
+.boc2{
+    
+}
+/* page2 */
+.main2{
+    background-color: #000814;
+    text-align: center;
+}
+.card-text, .card-title{
+    color: black;
+}
+.main3{
+    background-image: url(pexels-future-kiiid-3551497.jpg);
+    /* height: 700px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+.heading{
+    font-size: 50px;
+    color: black;
+    
+}
+
+.cont{
+    
+    margin-top: 400px;
+}
+
+/* pqge4 */
+.main4{
+    background-color: #000814;
+    height: auto;
+    text-align: center;
+    font-family: serif;
+}
+.head{
+    font-size: 40px;
+    line-height: 1;
+    text-justify: auto;
+}
+/* @media screen and (min-width:422px){
+    .page1 .btn{
+        margin-bottom: 200px !important;
+    }
+} */
+@media screen and (max-width:576px){
+.texts{
+    text-align: justify;
+}
+}
+/* @media screen and(max-width:1200px) and (min-width:900){
+   .img img{
+    margin: px;
+    border: px solid black !important;
+   }
+} */
+ .main5{
+    background-image: url(horse5.jpg);
+    background-size: cover;
+    height: 450px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+
+ }
+
+ .main6{
+    /* height: 800px; */
+    background-color: #000814;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* position: absolute;
+    top: 500px; */
+
+
+ }
+ 
+.img img{
+    width: 300px; 
+    height: 300px;
+    transition: 2s;
+ }
+ .img1 a img{
+    width: 250px;
+    height: 250px;
+   
+    transition: 2.5s;
+   
+ }
+ .zoom div{
+    overflow: hidden;
+    
+ }
+ .img a img:hover{
+  transform: scale(1.5);
+  box-shadow: 0px 0px 30px black;
+   
+ }
+ .img1 a img:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 30px black;
+ }
+ .img{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ @media screen and (max-width:300px) {
+  .img a img{
+    width: 100%;
+    
+  }
+ }
+
+.head2 h1{
+    font-size: 40px;
+    text-align: center;
+}
+a img{
+    /* border: 0.5px solid black !important;
+    box-shadow: 0px 0px 30px black; */
+}
+
+.last{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.img1 img:hover{
+    
+  
+   
+ }
+ @media screen and (max-width: 300px){
+
+.img1 img:hover{
+        /* width:500px;
+        height: 190px; */
+    }
+ }
+ .img1{
+    display: flex;
+    justify-content: space-evenly;
+ }

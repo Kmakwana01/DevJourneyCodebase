@@ -1,0 +1,21 @@
+<!-- /your-project-folder/views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail Authentication</title>
+</head>
+<body>
+  <h1>Welcome to Gmail Authentication Example</h1>
+  
+  <% if (!user) { %>
+    <p><a href="/auth/google">Login with Google</a></p>
+  <% } else { %>
+    <p>Hello, <%= user.displayName %>!</p>
+    <p><a href="/profile">View Profile</a></p>
+    <p><a href="/logout">Logout</a></p>
+  <% } %>
+</body>
+</html>

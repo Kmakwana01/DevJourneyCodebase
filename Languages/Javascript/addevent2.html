@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="101">Click</button>
+    <p id="102"></p>
+</body>
+    <script>
+        let ref=document.getElementById("101");
+         ref.addEventListener("mouseover",fun1);
+         ref.addEventListener("focus",fun2);
+         ref.addEventListener("mouseleave",fun3);
+         ref.addEventListener("dblclick", fun4)
+
+         let ref2=document.getElementById("102");
+         function fun1(){
+            ref2.innerHTML+=`Mouse over <br>`;
+                 }
+            function fun2(){
+                ref2.innerHTML+=`Clicked <br>`;
+            }
+            function fun3(){
+                ref2.innerHTML+=`Mouse leave <br>`
+            }
+            function fun4(){
+                ref2.innerHTML+=`Double Click <br>`
+            }
+</script>
+</html>

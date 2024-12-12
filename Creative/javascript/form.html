@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" name="main" onsubmit="validation(); return false" >
+        <label for="">id :-</label>
+        <input type="number" name="id">
+        <br><br>
+        <label for="">name :-</label>
+        <input type="text" name="name">
+        <br><br>
+        <label for="">email :-</label>
+        <input type="email" name="email">
+        <br><br>
+        <label for="">phone :-</label>
+        <input type="number" name="phone">
+        <br><br>
+        <input type="submit" name="submit">
+    </form><br>
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+    </table>
+
+    <script>
+        function validation() {
+            let tbody = document.getElementsByTagName("tbody")[0]
+            tbody.innerHTML+= ` 
+            <tr>
+                <td>${document.main.id.value}</td>
+                <td>${document.main.name.value}</td>
+                <td>${document.main.email.value}</td>
+                <td>${document.main.phone.value}</td>
+            </tr>
+            `
+        }
+    </script>
+</body>
+
+</html>

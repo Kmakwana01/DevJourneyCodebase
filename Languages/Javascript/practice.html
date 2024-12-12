@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color:  black;
+    }
+</style>
+<body>
+    <input id="101" style="border-radius: 50%;" type="color">
+    <div class="box"></div>
+</body>
+<script>
+   let v= Array.from(document.getElementsByTagName("div")).forEach((elem)=>{
+        elem.style.background="red";
+    })
+    console.log(v);
+
+    //  let fruit={
+    //     apple:"red",
+    //     mango:"yellow",
+    //     graphs:"green",
+    //     banana:"yellow"
+    // };
+    // console.log(fruit);
+
+    // // const array=[1,21,21,4,54,78];
+    // let arr = fruit.from(fruit);
+    // document.write(arr)
+    // console.log(arr);
+    // // console.warn(fruit);
+    // console.info(fruit);
+    // console.time(object);
+    // for (const i in fruit){
+//    console.log(i+`${v++}`)
+// }
+//    let a=array.reduce((val)=>{
+//     return val>10;
+// })
+//     document.write(a)
+    
+//
+
+
+// let colors=document.getElementById("101");
+// setInterval(()=>{
+
+//     document.body.style.background=colors.value;
+// },10)
+</script>
+</html>

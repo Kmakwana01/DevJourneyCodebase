@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            /* background-color:red; */
+            background-image: url(man2.webp);
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo" id="demo"></div>
+    <button onclick="cllik()">click</button>
+</body>
+<script>
+    cllik = () => {
+        document.querySelector("#demo").classList.toggle("demo")
+    }
+</script>
+
+</html>

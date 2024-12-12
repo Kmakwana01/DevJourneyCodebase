@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4 id="101"></h4>
+    <button onclick="play()">Game play</button>
+</body>
+<script>
+
+    const play = () => {
+        let ans = confirm("can your play 10 round");
+
+
+        if (ans == true) {
+
+            for (let i = 1; i <= 10; i++) {
+                let user = prompt("Enter S && W && G").toUpperCase();
+                //     console.log(user);
+                //    console.log(typeof(user));
+                let computer = Math.floor(Math.random() * 2);
+                if (computer == 0) {
+                    computer = "S"
+                }
+                else if (computer == 1) {
+                    computer = "W"
+                }
+                else if (computer == 2) {
+                    computer = "G"
+                }
+                computer.toUpperCase()
+                // console.log(computer);
+                let TIE = 0, USER = 0, COMPUTER = 0
+                if (user === computer) {
+                    TIE++;
+                    document.getElementById("101").innerHTML += `<br>user::${user}<br>computer::${computer}<br>Match is TIE`
+
+                }
+                else if (user == "S" && computer == "W") {
+                    USER++;
+                    document.getElementById("101").innerHTML += `<br>user::${user}<br>computer::${computer}<br>USER is win `
+
+                }
+                else if (user == "S" && computer == "G") {
+                    COMPUTER++;
+                    document.getElementById("101").innerHTML += `<br>user::${user}<br>computer::${computer}<br>computer is win `
+
+
+                }
+                else if (user == "G" && computer == "W") {
+                    COMPUTER++;
+                    document.getElementById("101").innerHTML += `<br>user::${user}<br>computer::${computer}<br>computer is win `
+                }
+
+                else if (user == "W" && computer == "G") {
+                    USER++;
+                    document.getElementById("101").innerHTML += `<br>user::${user}<br>computer::${computer}<br>USER is win `
+                }
+
+                else if (user == "W" && computer == "S") {
+                    COMPUTER++;
+                    document.getElementById("101").innerHTML += `<br>user::${user}<br>computer::${computer}<br>computer is win `
+
+
+                }
+                else if (user == "G" && computer == "S") {
+                    USER++;
+                    document.getElementById("101").innerHTML += `<br>user::${user}<br>computer::${computer}<br>USER is win `
+                }
+
+
+            }
+
+        }
+    }
+
+
+</script>
+
+</html>

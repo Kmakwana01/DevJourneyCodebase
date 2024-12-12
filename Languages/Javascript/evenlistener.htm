@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventlistener</title>
+</head>
+<body>
+       <h1 id="counter"></h1>
+        <button id="101">incriment</button>
+        <button onclick="stop()">stop</button>
+        <button id="102">dicriment</button>
+        <button onclick="start()">Start</button>
+        <input type="text"   placeholder="Enter your number" minlength="3" maxlength="6" >
+        <button type="submit">Submit</button>
+    </body>
+<script>
+    var i=0;
+    document.getElementById("101").addEventListener("click",demo)
+    function demo(){
+        document.getElementById("counter").innerHTML=i;
+        i++;
+    }
+    document.getElementById("101").addEventListener("mouseenter",change);
+    function change(){
+        document.getElementById("counter").style.background="red";
+    }
+    document.getElementById("101").addEventListener("mouseleave",change2);
+    function change2(){
+        document.getElementById("counter").style.background="";
+    }
+
+    
+        document.getElementById("102").addEventListener("click",demo2);
+        function demo2(){
+            document.getElementById("counter").innerHTML=i;
+            i--;
+        }
+    
+
+        function stop(){
+            document.getElementById("101").removeEventListener("click",demo);
+            document.getElementById("102").removeEventListener("click",demo2);
+        }
+
+            function start(){
+                 document.getElementById("101").addEventListener("click",demo)
+                  document.getElementById("102").addEventListener("click",demo2);
+                
+            }
+
+        
+
+    
+</script>
+</html>

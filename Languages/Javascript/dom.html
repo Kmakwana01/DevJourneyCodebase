@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main" class="khushal">
+        <h1>1</h1>
+        <h1>2</h1>
+        <h1>3asdf</h1>
+    </div>
+
+    <h1>1</h1>
+    <h1>2</h1>
+    <h1 class="">3</h1>
+    <h1 class="h1">
+
+</body>
+<script>
+    // document.getElementsByClassName('main')[0].firstElementChild.nextElementSibling.nextElementSibling.style.background="red"
+    // document.getElementsByClassName('main')[0].lastElementChild.previousElementSibling.style.background="red"
+    // document.getElementsByClassName("h1")[0].firstElementChild.firstElementChild.style.color="red"
+    //  let c=document.getElementById("main").hasAttribute("class")
+    //  console.log(c);
+    //     Array.from(document.getElementsByTagName("h1")).forEach((element)=>{
+    //         element.style.color="red"
+    //     })
+
+    // let b= document.getElementsByClassName("main")
+
+    // console.log(b);
+    // let a=document.getElementsByClassName("main")[0].firstElementChild.innerHTML="khushal makwana gautambhai"
+    // console.log(a);
+
+    // let v=document.createElement("span")[0].innerHTML="khsuahl"
+    // for(let i=0; i<=10; i++){
+    // }
+
+    let a = document.getElementById("main");
+    for (let i = 0; i <= 10; i++) {
+        let b = document.createElement("h1");
+        b.innerHTML = `khushal makwana ${i}`
+        a.after(b)
+
+    }
+    a.insertAdjacentHTML("beforebegin", "beforebegin")
+    a.insertAdjacentHTML("afterbegin", "afterbegin")
+    a.insertAdjacentHTML("afterend", "afterend")
+    a.insertAdjacentHTML("beforeend", "beforeend")
+    a.remove()
+</script>
+
+</html>

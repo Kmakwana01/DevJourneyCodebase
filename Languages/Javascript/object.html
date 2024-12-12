@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click</button>
+  <!-- <input type="text" onchange="change(this)"> -->
+  <input type="text" id="101" onchange="chang()">
+ 
+</body>
+<script>
+    function chang(){
+    let v=document.getElementById("101");
+    v.value=v.value.toLocaleUpperCase();
+    }
+    // // object methods
+// let person={}
+// person.name="khsuahl";
+// person.age="19";
+
+// const x=person;
+// x.name="makwana"; name change
+// document.write(person.name)
+
+
+
+// let car = new Object();
+
+// car.thar="1500000"
+//  document.write(car.thar)
+
+// let p="kkkkkk"
+// let detail={
+//     name:"khushal",
+//     age:"19",
+//     p
+// }
+
+// detail.name2="dddh";
+// delete detail.name2;
+// document.write(detail.name2)
+// for(let i in detail){
+//     document.write(`${detail[i]} `)   
+// }
+
+
+
+const obj={
+    name:"khushal",
+    surname:"makwana",
+    fathername:"gautambhai",
+  
+    name2:{
+        name3:"khsuhal",
+    },
+    namee:function(){return 100},
+    name5:"fjfh",
+    get names(){
+        return this.name.toLocaleUpperCase();
+    }
+    };
+
+    
+// document.write(JSON.stringify(obj))
+    
+    
+
+
+// document.write(Object.values(obj))
+// let v=document.write(JSON.stringify(obj))
+// document.write(Object.values(obj))
+// for(let i in obj){
+//     // document.write("Fsd"))
+//     document.write(`${obj[i]} `)
+// }
+// document.write(JSON.stringify(obj))
+// document.write(obj.name2.name3)
+
+// function detail(name,age,eye){
+//     this.name=name;
+//     this.age=age;
+//     this.eye=eye;
+// }
+
+// const k=new detail("khsual","19","blue");
+
+// document.write(k.eye)
+// // Object.values(detail);
+
+
+function name(){
+ 
+    return{next: function(){
+        document.write("khushal")
+    }
+};
+}
+name();
+
+
+
+</script>
+</html>

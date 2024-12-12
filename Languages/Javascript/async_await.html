@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    async function main(){
+        let p1=new Promise((resolve,reject)=>{
+            console.log("please wait");
+            setTimeout(()=>{
+                resolve("value1")
+            },3000)
+            console.log("end");
+        })
+        let p2=new Promise((resolve,reject)=>{
+            console.log("please wait1");
+            setTimeout(()=>{
+                resolve("value2")
+            },4000)
+            console.log("end2");
+        })
+        console.log("1");
+        let pp1=await p1;
+        console.log(pp1);
+        console.log("end");
+        console.log("2");
+        let pp2=await p2;
+        console.log(pp2);
+        console.log("end");
+
+    }
+    console.log("main cod")
+    main();
+
+</script>
+</html>

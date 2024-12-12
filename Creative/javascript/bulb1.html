@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .off,.on{
+            height: 30px;
+            width: 300px;
+            cursor: pointer;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="center">
+    <div>
+        <img src="image/off1.webp" alt="" style="width: 600px;" id="bulb">
+        <!-- <img src="image/on1.webp" alt=""> -->
+       <div class="btns"> 
+        <button onclick="btnoff()" class="off">off</button>
+        <button onclick="btnon()" class="on">on</button>
+       </div>
+    </div>
+   </div>
+    <script>
+        let bulb=document.getElementById("bulb");
+        function btnon(){
+            bulb.src="image/on1.webp";
+        }
+        function btnoff(){
+            bulb.src="image/off1.webp";
+        }
+    </script>
+</body>
+</html>

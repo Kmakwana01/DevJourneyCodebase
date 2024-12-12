@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function demo(){
+       let promise=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve(11)
+            },5000)
+       })
+       let promise2=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve(112)
+            },1000)
+       })
+      
+      promise.then((value)=>{
+        console.log(value);
+        console.log("ok");
+       })
+       
+      promise2.then((value)=>{
+        console.log(value);
+        console.log("ok2");
+       })
+    }
+    demo().then((value)=>{
+        console.log(value);
+        // console.log(promise);
+    })
+    // alert(a)
+</script>
+</html>

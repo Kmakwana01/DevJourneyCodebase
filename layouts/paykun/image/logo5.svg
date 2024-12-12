@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133" height="108" viewBox="0 0 133 108">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.11" y1="0.101" x2="1.467" y2="1.488" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0094ff"/>
+      <stop offset="1" stop-color="#374fc1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1.132" y1="1.21" x2="-0.455" y2="-0.574" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0094ff"/>
+      <stop offset="0.018" stop-color="#18a0ff"/>
+      <stop offset="0.063" stop-color="#4fbdff"/>
+      <stop offset="0.102" stop-color="#77d2ff"/>
+      <stop offset="0.132" stop-color="#8fdfff"/>
+      <stop offset="0.151" stop-color="#99e4ff"/>
+      <stop offset="0.163" stop-color="#a0e5ff"/>
+      <stop offset="0.215" stop-color="#bdecff"/>
+      <stop offset="0.27" stop-color="#d3f2ff"/>
+      <stop offset="0.33" stop-color="#e3f6ff"/>
+      <stop offset="0.398" stop-color="#edf8ff"/>
+      <stop offset="0.491" stop-color="#f0f9ff"/>
+      <stop offset="0.56" stop-color="#ebf6fd"/>
+      <stop offset="0.632" stop-color="#dfedf7"/>
+      <stop offset="0.706" stop-color="#cae0ee"/>
+      <stop offset="0.781" stop-color="#adcde1"/>
+      <stop offset="0.835" stop-color="#93bcd6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.956" y1="1.667" x2="0.279" y2="-0.066" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#39d4cb"/>
+      <stop offset="0.41" stop-color="#30e2b4"/>
+      <stop offset="1" stop-color="#25f499"/>
+    </linearGradient>
+    <filter id="Rectangle_5" x="40.942" y="46.261" width="41.468" height="18.527" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-4" x1="0.956" y1="1.667" x2="0.279" y2="-0.066" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1d6b66"/>
+      <stop offset="0.252" stop-color="#1f9073"/>
+      <stop offset="0.762" stop-color="#23d78e"/>
+      <stop offset="1" stop-color="#25f499"/>
+    </linearGradient>
+    <filter id="Rectangle_7">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-5" x1="0.116" y1="0.053" x2="0.826" y2="0.84" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fece6b"/>
+      <stop offset="0.303" stop-color="#fbcb69"/>
+      <stop offset="0.516" stop-color="#f2c265"/>
+      <stop offset="0.701" stop-color="#e3b25d"/>
+      <stop offset="0.869" stop-color="#ce9c52"/>
+      <stop offset="1" stop-color="#b88647"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_486" data-name="Group 486" transform="translate(-1308 -3261)">
+    <rect id="Rectangle_182" data-name="Rectangle 182" width="133" height="108" transform="translate(1308 3261)" fill="#fff"/>
+    <g id="Group_13" data-name="Group 13" transform="translate(284 2735)">
+      <g id="Group_8" data-name="Group 8" transform="translate(1043 538)">
+        <path id="Path_2" data-name="Path 2" d="M1128.351,560.895v37.759a22.588,22.588,0,0,1-1.184,7.243,22.983,22.983,0,0,1-21.71,15.652h-39.562A22.962,22.962,0,0,1,1043,598.653V560.895A22.961,22.961,0,0,1,1065.895,538h39.562A22.961,22.961,0,0,1,1128.351,560.895Z" transform="translate(-1043 -538)" fill="url(#linear-gradient)"/>
+        <rect id="Rectangle_3" data-name="Rectangle 3" width="63.713" height="40.572" rx="18.788" transform="translate(11.42 23.291)" fill="#0f5eb0"/>
+        <rect id="Rectangle_4" data-name="Rectangle 4" width="63.713" height="40.572" rx="18.788" transform="translate(10.819 21.488)" fill="url(#linear-gradient-2)"/>
+        <g transform="matrix(1, 0, 0, 1, -19, -12)" filter="url(#Rectangle_5)">
+          <rect id="Rectangle_5-2" data-name="Rectangle 5" width="38.468" height="15.027" rx="7.513" transform="translate(42.44 46.26)" fill="url(#linear-gradient-3)"/>
+        </g>
+        <g id="Group_7" data-name="Group 7" transform="translate(23.442 34.261)">
+          <g id="Group_4" data-name="Group 4">
+            <rect id="Rectangle_6" data-name="Rectangle 6" width="38.468" height="15.027" rx="7.513" fill="url(#linear-gradient-4)"/>
+          </g>
+          <g id="Group_6" data-name="Group 6">
+            <g id="Group_5" data-name="Group 5" opacity="0.35" style="mix-blend-mode: darken;isolation: isolate">
+              <g data-type="innerShadowGroup">
+                <rect id="Rectangle_7-2" data-name="Rectangle 7" width="38.468" height="15.027" rx="7.513" fill="#009b8f"/>
+                <g transform="matrix(1, 0, 0, 1, -42.44, -46.26)" filter="url(#Rectangle_7)">
+                  <rect id="Rectangle_7-3" data-name="Rectangle 7" width="38.468" height="15.027" rx="7.513" transform="translate(42.44 46.26)" fill="#fff"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <path id="Path_3" data-name="Path 3" d="M1160.837,617.368v10.254a22.59,22.59,0,0,1-1.184,7.243,20.471,20.471,0,0,1-25.8,8.86l-6.732-2.831a4.247,4.247,0,0,1-2.284-2.26,3.413,3.413,0,0,1,.613-4.075,4.139,4.139,0,0,1,3.011-1.028l7.82.373-2.272-3.071-.108-.15h1.923a16.634,16.634,0,0,0,14.492-8.535,16.4,16.4,0,0,0,2.11-8.066v-2.735a3.763,3.763,0,0,1,2.639-.709,4.488,4.488,0,0,1,3.324,2.152l.787,1.268A20.078,20.078,0,0,1,1160.837,617.368Z" transform="translate(-32.486 -28.969)" fill="#1168c4"/>
+      <path id="Path_4" data-name="Path 4" d="M1143.054,630.018,1128.928,610.9a4.728,4.728,0,0,1,1.363-6.451h0a4.728,4.728,0,0,1,6.569,1.3l7.8,8.215s2.14-4.28,6.419-2.14a5.811,5.811,0,0,1,7.489-3.745s1.388-3.471,4.724-3.144a4.844,4.844,0,0,1,3.583,2.321l.852,1.37a22.052,22.052,0,0,1-5.44,29.241h0a22.054,22.054,0,0,1-21.847,2.726l-7.253-3.054a4.579,4.579,0,0,1-2.463-2.433,3.683,3.683,0,0,1,.662-4.39,4.453,4.453,0,0,1,3.246-1.111Z" transform="translate(-33.988 -26.19)" fill="url(#linear-gradient-5)"/>
+    </g>
+  </g>
+</svg>

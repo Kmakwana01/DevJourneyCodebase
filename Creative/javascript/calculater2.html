@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin: auto;
+            background-color: #244242;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        td button {
+            font-size: 16px;
+            height: 80px;
+            width: 100px;
+            margin: 3px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        td input {
+            border-radius: 15px;
+            border: none;
+            margin: 3px;
+            width: 97%;
+            height: 60px;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        input:focus {
+            /* border: none; */
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input id="text" type="text"></td>
+        </tr>
+        <tr>
+            <td><button onclick="ac()">AC</button></td>
+            <td><button onclick="bs()">B</button></td>
+            <td><button onclick="opr(this.innerHTML)">%</button></td>
+            <td><button onclick="opr(this.innerHTML)">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="val(this.innerHTML)">7</button></td>
+            <td><button onclick="val(this.innerHTML)">8</button></td>
+            <td><button onclick="val(this.innerHTML)">9</button></td>
+            <td><button onclick="opr(this.innerHTML)">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="val(this.innerHTML)">4</button></td>
+            <td><button onclick="val(this.innerHTML)">5</button></td>
+            <td><button onclick="val(this.innerHTML)">6</button></td>
+            <td><button onclick="opr(this.innerHTML)">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="val(this.innerHTML)">1</button></td>
+            <td><button onclick="val(this.innerHTML)">2</button></td>
+            <td><button onclick="val(this.innerHTML)">3</button></td>
+            <td rowspan="2"><button style="height: 170px;" onclick="ans()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button style="width: 97%;" onclick="val(this.innerHTML)">0</button></td>
+            <td><button onclick="dot()" id="dot">.</button></td>
+            <!-- <td><button>.</button></td> -->
+        </tr>
+        <tr>
+        </tr>
+    </table>
+    <script>
+        let val1, op;
+        let arr1 = [];
+        let text = document.getElementById("text");
+        function val(val) {
+            // val=Number(val)
+            text.value += val;
+            arr1.push(val);
+            // console.log(typeof(val))
+        }
+
+        let count = 0;
+        function dot() {
+            if (arr1.includes(".")) {
+
+            } else {
+                text.value += "."
+                arr1.push(".")
+                // count=0
+            }
+        }
+
+        function opr(n) {
+            val1 = text.value;
+            text.value = "";
+            op = n;
+            arr1 = []
+            count = 0
+        }
+
+        function ac() {
+            text.value = ""
+            val1 = ""
+            arr1 = [];
+            count = 0
+        }
+
+        function ans() {
+            arr1=[];
+            val1 = Number(val1);
+            let t = text.value
+            // text.value = Number(t);
+            // console.log(typeof(val1))
+            // console.log(typeof(text.value))
+            if (op == "+") {
+                text.value = Number(val1) + Number(text.value);
+            }
+
+            if (op == "-") {
+                text.value = Number(val1) - Number(text.value);
+            }
+
+            if (op == "x") {
+                text.value = Number(val1) * Number(text.value);
+            console.log(text.value);
+            }
+
+            if (op == "%") {
+                text.value = Number(val1) * Number(text.value) / 100;
+            }
+            // console.log(text.value)
+            count = 0
+            str = String(text.value);
+            for(let i=0; i<str.length; i++){
+                arr1.push(str[i]);
+                console.log(arr1)
+            }
+        }
+
+        function bs() {
+            // console.log(arr1.pop(1))
+            arr1.pop();
+            text.value = arr1.join("");
+        }
+        // function bs(){
+        // text.value=Math.floor(text.value/10)
+        // if(text.value==0){
+        //     text.value=""
+        // }
+        // }
+    </script>
+</body>
+
+</html>

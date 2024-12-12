@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .main{
+        width: 100%;
+        height: 80px;
+        position: relative;
+        background-color: slategray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menubar li{
+        list-style: none;
+        display: inline-block;
+      
+    }
+    .menubar li a{
+        text-decoration: none;
+        color: black;
+        background-color: cadetblue;
+    padding: 15px 30px;
+    border-radius: 30%;
+    }
+    .submenu{
+        display: none;
+    }
+    .menubar li:hover .submenu li{
+        display: block;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div>
+                <ul class="menubar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a>
+                        <ul class="submenu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a>
+                                <ul class="petamenu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Home</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

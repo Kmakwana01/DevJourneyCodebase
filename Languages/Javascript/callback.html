@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width =device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+<!-- <script>
+ function demo(some){
+    document.getElementById("demo").innerHTML=some
+ }
+ function sum(num1,num2,demo){
+    let sum=num1+num2;
+    demo(sum);
+ }
+
+ sum(45,45,demo)
+</script> -->
+<script>
+    let array=[1,-23,-34,345,90,0,45,-3]
+    let a1 = myarray(array,x=>x>=0);
+    function myarray(arr,callback){
+        const newarray=[];
+       for(const x of arr){
+        if(callback(x)){
+            newarray.push(x);
+        }
+       }
+        document.write(newarray)
+    }
+</script>
+
+</html>

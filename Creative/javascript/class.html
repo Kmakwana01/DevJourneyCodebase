@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,
+        th {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>post</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        let tbody = document.getElementsByTagName("tbody");
+        let id = 1
+
+        class first {
+            detail(name, post) {
+                
+                let salary;
+
+                if (post == "CEO") {
+                    salary = 5000000
+                }
+                else if (post == "manager") {
+                    salary = "100000"
+                } else if (post == "worker") {
+                    salary == "10000"
+                }
+
+                tbody[0].innerHTML += ` 
+                <tr>
+                <td>${id}</td>
+                <td>${name}</td>
+                <td>${post}</td>
+                <td>${salary}</td>
+                </tr>`
+
+                id++;
+            }
+        }
+
+        let a = new first();
+        a.detail("khushal", "CEO");
+
+        let b = new first();
+        b.detail("rohit", "manager");
+
+    </script>
+</body>
+
+</html>

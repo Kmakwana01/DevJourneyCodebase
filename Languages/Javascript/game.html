@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+
+    .main {
+      width: 330px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .row div {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 10px;
+    }
+
+    .btnn {
+      margin: auto;
+      width: 320px;
+      height: 40px;
+      margin-top: 30px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid black;
+    }
+
+    .ff {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center; font-weight: 600; margin-top: 40px;">Puzzle Game</h1>
+  <div class="main">
+    <div class="row">
+      <div id="v1" onclick="f1()">1</div>
+      <div id="v2" onclick="f2()">2</div>
+      <div id="v3" onclick="f3()">3</div>
+    </div>
+    <div class="row">
+      <div id="v4" onclick="f4()">4</div>
+      <div id="v5" onclick="f5()">5</div>
+      <div id="v6" onclick="f6()">6</div>
+    </div>
+    <div class="row">
+      <div id="v7" onclick="f7()">7</div>
+      <div id="v8" onclick="f8()">8</div>
+      <div id="v9" onclick="f9()"></div>
+    </div>
+  </div>
+
+  <div class="ff">
+    <button class="btnn" onclick="complate()">Complate</button>
+
+  </div>
+  <script>
+
+    let v1 = document.getElementById("v1");
+    let v2 = document.getElementById("v2");
+    let v3 = document.getElementById("v3");
+    let v4 = document.getElementById("v4");
+    let v5 = document.getElementById("v5");
+    let v6 = document.getElementById("v6");
+    let v7 = document.getElementById("v7");
+    let v8 = document.getElementById("v8");
+    let v9 = document.getElementById("v9");
+
+    let a = v1.innerHTML = Math.floor(Math.random() * 8) + 1;
+    let b, c, d, e, f, g, h, i;
+    do {
+      b = v2.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(b);
+      if (b != a) {
+        break;
+      }
+    } while (b > 0);
+
+    do {
+      c = v3.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(c);
+      if (c != a && c != b) {
+        break;
+      }
+    } while (c > 0);
+    do {
+      d = v4.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(d);
+      if (d != a && d != b && d != c) {
+        break;
+      }
+    } while (d > 0);
+    do {
+      e = v5.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(e);
+      if (e != a && e != b && e != c && e != d) {
+        break;
+      }
+    } while (e > 0);
+    do {
+      f = v6.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(f);
+      if (f != a && f != b && f != c && f != d && f != e) {
+        break;
+      }
+    } while (f > 0);
+    do {
+      g = v7.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(g);
+      if (g != a && g != b && g != c && g != d && g != e && g != f) {
+        break;
+      }
+    } while (g > 0);
+    do {
+      h = v8.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(h);
+      if (h != a && h != b && h != c && h != d && h != e && h != f && h != g) {
+        break;
+      }
+    } while (h > 0);
+
+    do {
+      i = v8.innerHTML = Math.floor(Math.random() * 8) + 1;
+      console.log(h);
+      if (i != a && i != b && i != c && i != d && i != e && i != f && i != g) {
+        break;
+      }
+    } while (i > 0);
+
+    // do {
+    //     c=v3.innerHTML=Math.floor(Math.random()*9);
+
+    // } while (c==a && c==b);   
+
+
+
+    // console.log(a);
+    // console.log(b);
+
+    function f1() {
+      if (v2.innerHTML == "") {
+        let s = v2.innerHTML;
+        v2.innerHTML = v1.innerHTML;
+        v1.innerHTML = s;
+      }
+      else if (v4.innerHTML == "") {
+        let s = v4.innerHTML;
+        v4.innerHTML = v1.innerHTML;
+        v1.innerHTML = s;
+      }
+    }
+    function f2() {
+      if (v1.innerHTML == "") {
+        let s = v1.innerHTML;
+        v1.innerHTML = v2.innerHTML;
+        v2.innerHTML = s;
+      }
+      else if (v3.innerHTML == "") {
+        let s = v3.innerHTML;
+        v3.innerHTML = v2.innerHTML;
+        v2.innerHTML = s;
+      }
+      else if (v5.innerHTML == "") {
+        let s = v5.innerHTML;
+        v5.innerHTML = v2.innerHTML
+        v2.innerHTML = s;
+      }
+    }
+    function f3() {
+      if (v2.innerHTML == "") {
+        let s = v2.innerHTML;
+        // alert(s)
+        v2.innerHTML = v3.innerHTML;
+        v3.innerHTML = s;
+      }
+      else if (v6.innerHTML == "") {
+        let s = v6.innerHTML;
+        v6.innerHTML = v3.innerHTML;
+        v3.innerHTML = s
+      }
+    }
+    function f4() {
+      if (v1.innerHTML == "") {
+        let s = v1.innerHTML;
+        v1.innerHTML = v4.innerHTML;
+        v4.innerHTML = s;
+      }
+      else if (v5.innerHTML == "") {
+        let s = v5.innerHTML;
+        v5.innerHTML = v4.innerHTML;
+        v4.innerHTML = s;
+      }
+      else if (v7.innerHTML == "") {
+        let s = v7.innerHTML;
+        v7.innerHTML = v4.innerHTML;
+        v4.innerHTML = s;
+      }
+    }
+    function f5() {
+      if (v2.innerHTML == "") {
+        let s = v2.innerHTML;
+        v2.innerHTML = v5.innerHTML;
+        v5.innerHTML = s;
+      }
+      else if (v6.innerHTML == "") {
+        let s = v6.innerHTML;
+        v6.innerHTML = v5.innerHTML;
+        v5.innerHTML = s;
+      }
+      else if (v8.innerHTML == "") {
+        let s = v8.innerHTML;
+        v8.innerHTML = v5.innerHTML;
+        v5.innerHTML = s;
+      }
+      else if (v4.innerHTML == "") {
+        let s = v4.innerHTML;
+        v4.innerHTML = v5.innerHTML;
+        v5.innerHTML = s;
+      }
+    }
+    function f6() {
+      if (v3.innerHTML == "") {
+        let s = v3.innerHTML;
+        v3.innerHTML = v6.innerHTML;
+        v6.innerHTML = s;
+      }
+      else if (v5.innerHTML == "") {
+        let s = v5.innerHTML;
+        v5.innerHTML = v6.innerHTML;
+        v6.innerHTML = s;
+      } else if (v9.innerHTML == "") {
+        let s = v9.innerHTML;
+        v9.innerHTML = v6.innerHTML;
+        v6.innerHTML = s;
+      }
+    }
+    function f7() {
+      if (v4.innerHTML == "") {
+        let s = v4.innerHTML;
+        v4.innerHTML = v7.innerHTML;
+        v7.innerHTML = s;
+      } else if (v8.innerHTML == "") {
+        let s = v8.innerHTML;
+        v8.innerHTML = v7.innerHTML;
+        v7.innerHTML = s;
+      }
+    }
+    function f8() {
+      if (v7.innerHTML == "") {
+        let s = v7.innerHTML;
+        v7.innerHTML = v8.innerHTML;
+        v8.innerHTML = s;
+      }
+      else if (v5.innerHTML == "") {
+        let s = v5.innerHTML;
+        v5.innerHTML = v8.innerHTML;
+        v8.innerHTML = s;
+      } else if (v9.innerHTML == "") {
+        let s = v9.innerHTML;
+        v9.innerHTML = v8.innerHTML;
+        v8.innerHTML = s;
+      }
+    }
+    function f9() {
+      if (v6.innerHTML == "") {
+        let s = v6.innerHTML;
+        v6.innerHTML = v9.innerHTML;
+        v9.innerHTML = s;
+      }
+      else if (v8.innerHTML == "") {
+        let s = v8.innerHTML;
+        v8.innerHTML = v9.innerHTML;
+        v9.innerHTML = s;
+      }
+    }
+
+    function complate() {
+      if (v1.innerHTML == "1" && v2.innerHTML == "2" && v3.innerHTML == "3" && v4.innerHTML == "4" && v5.innerHTML == "5" && v6.innerHTML == "6" && v7.innerHTML == "7" && v8.innerHTML == "8") {
+        alert("CONGRATULATIONS!! YOU ARE WIN!!");
+        setTimeout(() => {
+          window.location.reload();
+        }, 4000);
+      } else {
+        alert("|| GAME OVER || PLEASE TRY AGAIN")
+      }
+    }
+  </script>
+</body>
+
+</html>

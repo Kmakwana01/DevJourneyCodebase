@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    /* margin-top: 5px; */
+    /* box-shadow: 0px 0px 1px 1px black; */
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,1);
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+}
+.c-body{
+}
+.btn2{
+    width: 100%;
+    border: none;
+    padding: 6px;
+    background-color: black;
+    transition: .3s;
+    color: white;
+}
+.btn2:hover{
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,1);
+}
+th,td{
+    padding: 10px;
+}
+.price span{
+    font-size: 20px;
+}
+.price h5{
+    display:inline ;
+}
+table{
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+td,th{
+    text-align: center !important;
+    border: 1px solid black !important;
+}
+.in{
+    text-align: center;
+    width: 80px;
+    /* border: none !important; */
+}
+.bt button{
+    width: 35px;
+    border: 1px solid black;
+    margin: 4px;
+}
+.in:focus{
+    /* border: none !important; */
+    outline: none;
+
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.update{
+    width: 100%;
+    border: 1px solid black;
+}
+.pad{
+    padding: 7px !important;
+}

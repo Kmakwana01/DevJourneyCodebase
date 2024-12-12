@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="101">
+    <button onclick="call()">click</button>
+    <div id="print"></div>
+</body>
+ <script>
+        let a=document.getElementById("101");
+        function call(){
+           let data=a.value;
+           let print=document.getElementById("print");
+          try{
+            if(isNaN(data)){
+                throw print.innerHTML="please enter number"
+            }else{
+                if(data<50||data>100){
+                    throw print.innerHTML="data is out of range";
+                }else{
+                    throw print.innerHTML="data in range::"
+                }
+            }
+          }catch(error){
+            console.log(error);
+          }finally{
+            document.getElementById("101").value=""
+          }
+        }
+ </script>
+</html>

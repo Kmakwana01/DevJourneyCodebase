@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            transition: .1s;
+        }
+
+        nav {
+            display: flex;
+            height: 80px;
+            width: 100%;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 35px;
+            margin-left: 40px;
+        }
+
+        .menu {
+            margin-left: auto;
+            margin-right: 30px;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .menu li a {
+            color: white;
+            margin-right: 50px;
+            font-size: 18px;
+        }
+
+        .center2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .line {
+            height: 2px;
+            width: 20px;
+            background-color: white;
+            margin-bottom: 5px;
+            display: none;
+        }
+
+        .icon {
+            margin-right: 40px;
+        }
+
+        .show {
+            right: 0%;
+        }
+
+        @media screen and (max-width:992px) {
+            .line {
+                display: block;
+            }
+
+            .icon {
+                width: 100%;
+                justify-content: end;
+            }
+
+            .menu {
+                position: fixed;
+                background-color: cadetblue;
+                top: 80px;
+            }
+
+            ul {
+                transition: all ease-in-out .5s;
+                position: relative;
+                right: -100%;
+                width: 100%;
+                display: block !important;
+            }
+
+            .center2 {
+                display: block;
+            }
+
+            .menu li a {
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu li {
+                background-color: red;
+                display: block !important;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .menu {
+                margin-right: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo center">
+            <input type="text" placeholder="Can I Help You?">
+        </div>
+        <ul class="menu center2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+
+        </ul>
+        <div class="icon center">
+            <div>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.icon').click(function () {
+                $('.menu').toggleClass("show")
+            })
+        })
+    </script>
+</body>
+
+</html>

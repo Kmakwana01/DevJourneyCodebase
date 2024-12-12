@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" onkeypress="keypress()" onkeyup="up()" onkeydown="down()">
+    <h5 id="101"></h5>
+</body>
+<script>
+    let ref = document.getElementById("101");
+    keypress = () => {
+        ref.innerHTML = `this key is "${event.key}"`;
+    }
+    up = () => {
+        ref.innerHTML = `key up`;
+    }
+    down = () => {
+        ref.innerText = `key down`;
+    }
+
+</script>
+
+</html>

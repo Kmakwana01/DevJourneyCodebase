@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" onsubmit="val(); return false" name="form">
+        <label for="#">Name</label>
+        <input type="text" name="name"><br><br>
+        <label for="#">Email</label>
+        <input type="text" name="email"><br><br>
+        <label for="#">Phone</label>
+        <input type="text" name="phone"><br><br>
+        <button type="submit">add</button><br><br>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script>
+        const val = () =>{
+            let name = document.form.name.value;
+            let email = document.form.email.value;
+            let phone = document.form.phone.value;
+            console.log(name,email,phone)
+
+            let tbody = document.querySelector("tbody")
+            
+            tbody.innerHTML += `<tr>
+                <td>${name}</td>
+                <td>${email}</td>
+                <td>${phone}</td>
+                <td><button onclick="Delete(this)">Delet</button></td>
+                </tr>`
+            }
+        const Delete = (n) =>{
+           n.parentElement.parentElement.innerHTML = ""
+            // let check=document.querySelectorAll(".check").checked 
+            // if(check){
+            //     alert("check")
+            // }
+            // else{
+            //     alert("not")
+            // }
+        }   
+    </script>
+</body>
+</html>

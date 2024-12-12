@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #switch1{
+            width: 600px;
+            height: 30px;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="center">
+    <div>
+        <img src="image/off1.webp" alt="" style="width: 600px;" class="img">
+        <div>
+         <button id="switch1" onclick="bulb()">OFF</button>
+        </div>
+       </div>
+  </div>
+    <script>
+        let switch1 = document.getElementById("switch1");
+        let img = document.getElementsByClassName("img")[0];
+        function bulb() {
+            if (switch1.innerHTML == "OFF") {
+                switch1.innerHTML = "ON"
+                img.src = "image/off1.webp"
+               
+            } else {
+                switch1.innerHTML = "OFF"
+                img.src ="image/on1.webp"
+
+            }
+        }
+    </script>
+</body>
+
+</html>

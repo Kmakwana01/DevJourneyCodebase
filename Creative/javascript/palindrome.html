@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let n=5155,sum=0,j,rev=0;
+       k = n;
+      
+       while(n > 0){
+            rev = parseInt(n%10);
+            sum = (sum*10) + rev;
+            n = parseInt(n/10);
+       }
+       document.write("reverse number==",sum,"<br>")
+       if(sum==k){
+        document.write("palindrom number");
+       }
+       else{
+        document.write("not palindrom number")
+       }
+    </script>
+</body>
+</html>

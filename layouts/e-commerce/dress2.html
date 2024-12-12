@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        .card {
+            margin-top: 30px;
+        }
+
+        .add {
+            margin-top: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            border-color: transparent;
+            transition: all ease-in-out .3s;
+        }
+
+        .add:hover {
+            background-color: transparent;
+            border-color: black;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="flex a-c position-sticky top-0">
+        <div class="logo a-c me--auto center">
+            <img src="image/umino.webp" style="width: 90px; height: 100%;" onmouseover="calll(this)" alt="logo">
+        </div>
+        <nav class="a-c">
+            <ul class="menubar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Products</a>
+                    <div class="submenu">
+                        <div class="flex megamenu">
+                            <ul style="width: 130px;">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                            <ul style="width: 130px;">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                            <ul style="width: 130px;">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Features</a>
+                    <div class="submenu2">
+                        <ul style="width: 150px; ">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">By Now</a></li>
+            </ul>
+        </nav>
+        <div class="icon a-c ms--auto center">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i>
+            <i><button class="login">Login</button></i>
+        </div>
+        <div class="bar a-c ">
+            <span style="font-size:30px;cursor:pointer" class="center" onclick="openNav()"><i class="fa-solid fa-bars"
+                    style="font-size: 25px;"></i></span>
+        </div>
+
+        <div id="myNav" class="overlay " style="z-index: 999;">
+            <div class="d-flex flex s-b p-10" style="background-color: black;  font-size: 12px;"> <a href="#"
+                    class="d-flex align-items-center" style="color: white;"><span>Menu</span>
+                </a> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                        class="fa-solid fa-arrow-left" style="font-size: 20px; color: white;"></i></a></div>
+            <div class="overlay-content">
+                <div class="container" style="margin: auto; ">
+                    <ul>
+                        <a href="Google.com">
+                            <li class="accordion gg">Home</li>
+                        </a>
+
+
+                        <li class="accordion">Shop</li>
+                        <div class="panel">
+                            <ul class="hhh">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </div>
+                        <li class="accordion">Product</li>
+                        <div class="panel">
+                            <ul class="hhh">
+                                <li><a href="#">Home</a></li>
+                                <DIV class="HHRR"></DIV>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </div>
+                        <a href="Google.com">
+                            <li class="accordion gg">Feauters</li>
+                        </a>
+
+
+                        <a href="#">
+                            <li class="accordion gg">Pages</li>
+                        </a>
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class=" font py60">
+
+        <div class="container">
+            <div class="row">
+                <div class="text text-center">
+                    <h1>Square Textured Striped</h1>
+                    <p class="mt-24">Here’s some of our most new arrivals products that people are in love with.</p>
+                </div>
+            </div>
+
+
+
+            <div class="row mt-5">
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d13.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d12.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d10.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d11.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d6.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d7.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d8.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card start -->
+                <div class="col-md-4 col-lg-3 col-sm-6 col-12 d-flex justify-content-around box">
+                    <div class="card p-1" style="width:  auto; ">
+                        <div class="d-flex justify-content-center">
+                            <img class="card-img-top" src="image/d2.webp" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Oversized Cotton Short</h4>
+                            <div class="font">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="review">1 review</span>
+                                <p class="mt-2 sold">$116.0 <span><del style="color: #757575;">$50.00</del></span></p>
+
+                            </div>
+
+                            <a href="#" class="btn btn-primary add">Add To cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+
+            </div>
+        </div>
+
+    </section>
+    <div class="container">
+        <div class="row">
+            <hr style="color: #ddcece;">
+
+        </div>
+    </div>
+    <footer class="py70 ert font">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                    <div class="logo">
+                        <img src="image/umino.webp" style="width: 20%;" alt="">
+                    </div>
+                    <p>268 St, South New York/NY 98944,<br> United States.</p>
+                    <p class="mt-8">+222-1800-2628</p>
+                    <p class="mt-8">abcd@gmail.com</p>
+                    <div class="icon3 mt-24">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-2 mb-4">
+                    <ul class="foot">
+                        <li>
+                            <h6>HOT CATEGORIES</h6>
+                        </li>
+                        <li><a href="#">Special offer</a></li>
+                        <li><a href="#">Performance</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Underweat</a></li>
+                        <li><a href="#">Top Brands</a></li>
+                        <li><a href="#">Onilne Exclusive</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-2 mb-4">
+                    <ul class="foot">
+                        <li>
+                            <h6>CUSTOMER SERVICE</H6>
+                        </li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping & Return</a></li>
+                        <li><a href="#">Term & Conditions</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Theme FAQs</a></li>
+                        <li><a href="#">Store Locations</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4">
+                    <div>
+                        <h6>SIGN UP TO NEWSLETTER</h6>
+                    </div>
+                    <p class="mt-12">Enter your email address to get $10 off your first order and free shipping. Updates
+                        information on Sales and Offers.</p>
+                    <div class="mt-24">
+                        <input type="text" class="inn me-2" placeholder="Enter Your Email">
+                        <button class="btnn">SBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <script src="js/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

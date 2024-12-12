@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.d-flex{
+    display: flex;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-30{
+    font-size: 30px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-30{
+    padding: 30px;
+}
+.p-40{
+    padding: 40px;
+}
+.p-50{
+    padding: 50px;
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.row{
+    width: 100%;
+    display: block;
+}
+.yyty{
+    height: 850px;
+    background-image: url(/image/home-classic-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    width: 20%;
+    padding-left: 50px;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu li,.menu2 li{
+    display: inline-block;
+}
+.menu,.menu2{
+    margin-left: auto;
+}
+.menu li a,.menu2 li a{
+    margin-right:32px ;
+    position: relative;
+}
+.menu,.menu2{
+    padding-right: 50px;
+}
+.purches{
+    padding: 13px 30px;
+    color: white;
+    background-color: black;;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.4s;
+}
+.purches:hover{
+    background-color: transparent;
+    border-color:black ;
+    color: black;
+}
+
+.hhg{
+    margin-top: 250px;
+    font-size: 43px;
+}
+.f-18{
+    font-size: 18px;
+}
+.p-now{
+    padding: 17px 38px;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 15px;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+}
+.p-now2{
+    padding: 13px 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 15px;
+    transition: all ease-in-out 0.4s;
+    cursor: pointer;
+}
+.p-now:hover,.p-now2:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+.lpll{
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    bottom: -1px;
+    transition: 0.3s;
+}
+.menu li a:hover .lpll{ 
+    width: 100% !important;
+    left: 0%;
+}
+.menu2 li a:hover .lpll{
+    width: 100% !important;
+    left: 0%;
+}
+
+.nnb h4{
+}
+.bbb{
+    background-image: url(image/t4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 25%;
+    background-size: cover;
+}
+/* new section */
+.hhgg{
+
+}
+.jjj{
+    width: 30%;
+}
+.s-b{
+    justify-content: space-between;
+}
+.hhgg p{
+    margin-top: 20px;
+    line-height: 25px;
+}
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tt{
+    margin-left: 20px;
+    color: #616161;
+}
+.ii{
+    color: #616161;
+}
+.owl-theme .owl-dots{
+    margin-left: 11px ;
+    margin-top: 29px !important;
+    text-align: start !important;
+    /* text-align: center; */
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: black !important;
+    padding: 2px !important;
+    /* font-size: 22px !important; */
+}
+.bbh{
+    width: 31%;
+    /* border: 2px solid black; */
+}
+.bbh .tth{
+    width: 100%;
+}
+.nn{
+    color: #333333;
+}
+.wh50{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.cc{
+    margin-left: 20px;
+}
+.mt-25{
+    margin-top: 25px;
+}
+.w25{
+    width: 25%;
+}
+.yyyi{
+    width: 25%;
+}
+.logo2{
+   font-size: 30px;
+}
+.yyyi li h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.yyyi li{
+    font-size: 14px;
+    list-style-type: none;
+}
+h4,h5{font-size: 25px;}
+.vff{
+    margin-bottom: 30px;
+}
+.ghj{
+    width: 50%;
+    height: 50%;
+}
+.ff img{
+    width: 50%;
+    height: 50%;
+}
+.mmm{
+    height: 470px;
+}
+.gg{
+    font-size: 13px;
+    margin-top: 8px;
+}
+.jjhk{
+    width: 31%;
+}
+.jjhk img{
+    width:100%;
+    border: 0.01px solid #616161;
+}
+.pp{
+    font-size: 25px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.menu2 a{
+    font-size: 13px;
+    color: black;
+}

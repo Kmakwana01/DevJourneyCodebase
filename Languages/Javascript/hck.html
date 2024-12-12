@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body style="background-image: url(hack2); background-repeat: no-repeat; background-size: cover; background-color: black; color: green; display: flex; justify-content: center; align-items: center; transition: 0.5s;">
+    <div id="101"></div>
+</body>
+<script>
+    let a=[
+        "Initilizing Hack tool...",
+        "Connecting to your phone...",
+        "Connecting to Server 1...",
+        "Connecting Failed Retrying...",
+        "Connecting to server 2...",
+        "Connected to Successfully...",
+        "Username I Am Hacker...",
+        "Trying Larry Fink...",
+        "Password Fetching..."
+    ];
+
+    let sleep=async(msg)=>{
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                let a=resolve("Asf");
+                // reject(true)
+            },msg*1000)
+        })
+        // .then((value)=>{
+        //     console.log(value);
+        // })
+    }
+    let b=async(msg)=>{
+        await sleep(2);
+        document.getElementById("101").innerHTML+=`${msg} <br>`
+    }
+    (async()=>{
+        for(let i=0; i < a.length; i++){
+           await b(a[i]);
+        }
+    })()
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>

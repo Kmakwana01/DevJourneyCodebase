@@ -1,0 +1,15 @@
+.khushal{
+    
+    background-color: aquamarine;
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-bottom: 500px;
+    border: 10px;
+    border-style: inset;border-color: blueviolet;
+    border-inline-color: black;
+    border-spacing: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://avatars.mds.yandex.net/i?id=5caf4e332228c46f19bbc49dcc1e94862e507438-6977815-images-thumbs&n=13);background-attachment: fixed;
+}

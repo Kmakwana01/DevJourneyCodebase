@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            margin: auto;
+            max-width: 300px;
+            height: auto;
+            background: black;
+            color: white;
+            padding: 50px;
+        }
+
+        .row {
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .row button {
+            border-radius: 10px;
+            width: 33%;
+            height: 100px;
+            margin: 2px;
+            font-size: 20px;
+            cursor: pointer;
+            /* outline: 1px solid black; */
+        }
+
+        .win {
+            text-align: center;
+        }
+
+        .reset {
+            color: white;
+            width: 400px;
+            height: 40px;
+            background-color: black;
+            margin: auto;
+            border: none;
+            margin-top: 9px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1 style="text-align: center; margin-bottom: 50px; margin-top: 0px; font-size: 40px;">Puzzle Game</h1>
+        <div class="row">
+            <button id="v1" onclick="f1()"><img src="/image/1.jpg" alt=""></button>
+            <button id="v2" onclick="f2()"><img src="/image/2.jpg" alt=""></button>
+            <button id="v3" onclick="f3()"><img src="/image/3.jpg" alt=""></button>
+        </div>
+        <div class="row">
+            <button id="v4" onclick="f4()"><img src="/image/4.jpg" alt=""></button>
+            <button id="v5" onclick="f5()"><img src="/image/5.jpg" alt=""></button>
+            <button id="v6" onclick="f6()"><img src="/image/6.jpg" alt=""></button>
+        </div>
+        <div class="row">
+            <button id="v7" onclick="f7()"><img src="/image/7.jpg" alt=""></button>
+            <button id="v8" onclick="f8()"><img src="/image/8.jpg" alt=""></button>
+            <button id="v9" onclick="f9()"></button>
+        </div>
+        <h1 class="win"></h1>
+    </div>
+    <div class="center">
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+    <script>
+        let arr = [];
+
+        for (let i = 0; arr.length != 9; i++) {
+            let a = Math.ceil(Math.random() * 9);
+            if (arr.includes(a)) {
+            }
+
+            else {
+                arr.push(a);
+            }
+        }
+        
+        let btn = document.getElementsByTagName("button");
+        for (let i = 0; i < 9; i++) {
+            btn[i].innerHTML = arr[i];
+            if (btn[i].innerHTML == "9") {
+                btn[i].innerHTML = ""
+            }
+            console.log(typeof (btn[i].innerHTML))
+        }
+
+        console.log(arr);
+
+        let v1 = document.getElementById("v1");
+        let v2 = document.getElementById("v2");
+        let v3 = document.getElementById("v3");
+        let v4 = document.getElementById("v4");
+        let v5 = document.getElementById("v5");
+        let v6 = document.getElementById("v6");
+        let v7 = document.getElementById("v7");
+        let v8 = document.getElementById("v8");
+        let v9 = document.getElementById("v9");
+        function f1() {
+            if (v2.innerHTML == "") {
+                let s = v1.innerHTML;
+                v1.innerHTML = v2.innerHTML
+                v2.innerHTML = s;
+            }
+            if (v4.innerHTML == "") {
+                let s = v1.innerHTML;
+                v1.innerHTML = v4.innerHTML
+                v4.innerHTML = s;
+            }
+        }
+        function f2() {
+            if (v1.innerHTML == "") {
+                let s = v2.innerHTML;
+                v2.innerHTML = v1.innerHTML;
+                v1.innerHTML = s;
+            }
+            if (v3.innerHTML == "") {
+                let s = v2.innerHTML;
+                v2.innerHTML = v3.innerHTML
+                v3.innerHTML = s;
+            }
+            if (v5.innerHTML == "") {
+                let s = v2.innerHTML;
+                v2.innerHTML = v5.innerHTML;
+                v5.innerHTML = s
+            }
+        }
+        function f3() {
+            if (v2.innerHTML == "") {
+                let s = v3.innerHTML;
+                v3.innerHTML = v2.innerHTML;
+                v2.innerHTML = s;
+            }
+            if (v6.innerHTML == "") {
+                let s = v3.innerHTML;
+                v3.innerHTML = v6.innerHTML;
+                v6.innerHTML = s;
+            }
+        }
+        function f4() {
+            if (v1.innerHTML == "") {
+                let s = v4.innerHTML;
+                v4.innerHTML = v1.innerHTML;
+                v1.innerHTML = s;
+            }
+            if (v5.innerHTML == "") {
+                let s = v4.innerHTML;
+                v4.innerHTML = v5.innerHTML;
+                v5.innerHTML = s;
+            }
+            if (v7.innerHTML == "") {
+                let s = v4.innerHTML;
+                v4.innerHTML = v7.innerHTML;
+                v7.innerHTML = s;
+            }
+        }
+        function f5() {
+            if (v2.innerHTML == "") {
+                let s = v5.innerHTML;
+                v5.innerHTML = v2.innerHTML;
+                v2.innerHTML = s
+            }
+            if (v4.innerHTML == "") {
+                let s = v5.innerHTML;
+                v5.innerHTML = v4.innerHTML;
+                v4.innerHTML = s
+            }
+            if (v6.innerHTML == "") {
+                let s = v5.innerHTML;
+                v5.innerHTML = v6.innerHTML;
+                v6.innerHTML = s
+            }
+            if (v8.innerHTML == "") {
+                let s = v5.innerHTML;
+                v5.innerHTML = v8.innerHTML;
+                v8.innerHTML = s
+            }
+        }
+        function f6() {
+            if (v3.innerHTML == "") {
+                let s = v3.innerHTML;
+                v3.innerHTML = v6.innerHTML;
+                v6.innerHTML = s
+            }
+            if (v5.innerHTML == "") {
+                let s = v5.innerHTML;
+                v5.innerHTML = v6.innerHTML;
+                v6.innerHTML = s
+            }
+            if (v9.innerHTML == "") {
+                let s = v9.innerHTML;
+                v9.innerHTML = v6.innerHTML;
+                v6.innerHTML = s
+            }
+        }
+        function f7() {
+            if (v4.innerHTML == "") {
+                let s = v4.innerHTML;
+                v4.innerHTML = v7.innerHTML;
+                v7.innerHTML = s;
+            }
+            if (v8.innerHTML == "") {
+                let s = v8.innerHTML;
+                v8.innerHTML = v7.innerHTML;
+                v7.innerHTML = s;
+            }
+        }
+        function f8() {
+            if (v5.innerHTML == "") {
+                let s = v5.innerHTML;
+                v5.innerHTML = v8.innerHTML;
+                v8.innerHTML = s;
+            }
+            if (v7.innerHTML == "") {
+                let s = v8.innerHTML;
+                v8.innerHTML = v7.innerHTML;
+                v7.innerHTML = s;
+            }
+            if (v9.innerHTML == "") {
+                let s = v9.innerHTML;
+                v9.innerHTML = v8.innerHTML;
+                v8.innerHTML = s
+            }
+            let win = document.getElementsByClassName("win")[0];
+            if (v1.innerHTML == "1" && v2.innerHTML == "2" && v3.innerHTML == "3" && v4.innerHTML == "4" && v5.innerHTML == "5" && v6.innerHTML == "6" && v7.innerHTML == "7" && v8.innerHTML == "8") {
+                win.innerHTML = "CONGRATULATIONS YOU ARE WIN";
+            } else {
+                win.innerHTML = "";
+            }
+        }
+        function f9() {
+            if (v6.innerHTML == "") {
+                let s = v6.innerHTML;
+                v6.innerHTML = v9.innerHTML;
+                v9.innerHTML = s;
+            }
+            if (v8.innerHTML == "") {
+                let s = v9.innerHTML;
+                v9.innerHTML = v8.innerHTML;
+                v8.innerHTML = s
+            }
+            let win = document.getElementsByClassName("win")[0];
+            if (v1.innerHTML == "1" && v2.innerHTML == "2" && v3.innerHTML == "3" && v4.innerHTML == "4" && v5.innerHTML == "5" && v6.innerHTML == "6" && v7.innerHTML == "7" && v8.innerHTML == "8") {
+                win.innerHTML = "CONGRATULATIONS YOU ARE WIN";
+
+                for (let i = 0; Infinity; i++) {
+                    // console.log(i)
+                    let btn = document.getElementsByTagName("button")[i];
+                    btn.onclick = ""
+                }
+            } else {
+                win.innerHTML = "";
+            }
+        }
+        function reset() {
+            window.location.reload();
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

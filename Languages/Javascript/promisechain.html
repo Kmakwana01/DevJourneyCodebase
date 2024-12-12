@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function load(src){
+        return new Promise((resolve,reject)=>{
+            let script=document.createElement("script");
+        script.src=src;
+        document.body.appendChild(script);
+        script.onload=()=>{
+            resolve("loaded");
+        }
+        script.onerror=()=>{
+            reject(0);
+        }
+        })
+        
+    }
+   let p1 = load("http://127.0.0.asdf1:5501/promisechain.html");
+   p1.then((value)=>{
+    console.log(value);
+    return load("http://127.0.0.1:5501/promisechain.html");
+   }).then((value)=>{
+    console.log(value);
+    return load
+   }).catch((error)=>{
+    console.log("this is an error");
+   })
+
+</script>
+</html>

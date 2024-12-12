@@ -1,0 +1,66 @@
+.singlep{
+    font-size: 32px;
+    margin-bottom: 33px;
+}
+
+.diso{
+    margin-top: 73px;
+}
+
+.figo{
+    font-size: 21px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-weight: 700;
+}
+
+.ligo{
+    font-size: 14px;
+    opacity: 0.6;
+    font-family: sans-serif;
+    line-height: 27.2px;
+}
+
+.io{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.desc{
+    font-size: 31px;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.rto12{
+    margin-left: 42px;  
+    opacity: 0.6;  
+}
+
+.tiyo{
+    background-image: url(/image/Quotes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.uttu{
+    width: 101%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.dodio{
+    margin-top: 73px;
+    margin-left: 102px;
+    padding-bottom: 48px;
+}
+
+@media screen and (max-width : 576px), (max-width : 768px), (max-width : 992px) {
+    .dodio{
+        margin-top: 0px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+
+    }
+}

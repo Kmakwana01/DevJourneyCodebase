@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+      
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50px/100px;
+        }
+        .box2{
+           
+        width: 0px;
+        height: 0px;
+        border-bottom: 100px solid red;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+
+        }
+        .box3{
+            width: 0px;
+        height: 0px;
+        border-bottom: 100px solid black;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        position: relative;
+        }
+        .inner{
+            top: 28px;
+    right: 50px;
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid black;
+    border-bottom: 0px solid;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: relative;
+        }
+        .box4{
+            width: 0;
+            height: 0;
+            border-top:50px solid transparent ;
+            border-right: 100px solid black;
+            border-left: 0px;
+            border-bottom: 50px solid transparent;
+            
+        }
+        .box5{
+            width: 0px;
+            height: 0px;
+            border-right: 0px;
+            border-left: 100px solid gray;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+        }
+        .box6{
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid blue;
+            border-left: 100px;
+            border-bottom: 100px solid transparent;
+            border-top: 100px solid transparent;
+        }
+        .box7{
+            width: 0px;
+            height: 0px;
+            border-top: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid black;
+            position: relative;
+        }
+        .box7::after{
+           left: -52px;       
+           position: absolute;
+           content: "";
+           width: 0px;
+           height: 0px;
+           border-top: 100px solid red;
+           border-left: 50px solid transparent;
+           border-right: 50px solid transparent;
+           border-bottom: 0px;
+           top: 32px;
+        }
+        .facebook{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            border-radius: 50%;
+        }
+        .text{
+            position: absolute;
+            top: 5px;
+            right: 33px;
+            color: white;
+            font-weight: 900;
+            font-size: 100px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .skew{
+            height: 100px;
+            width: 120px;
+            background-color: #8274ff;
+            transform: skew(20deg);
+            margin-left: 30px;
+        }
+        .box8::before {
+    content: "";
+    height: 0px;
+    width: 0px;
+    border-top: 0px;
+    border-bottom: 50px solid #45ffa4;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+        .box8{
+            position: relative;
+  
+    height: 100px;
+    width: 200px;
+    background-color: #45ffa4;
+    top: 51px;
+    right: 0px;
+}
+.box8::after {
+    content: "";
+    height: 0px;
+    width: 0px;
+    top: 100px;
+    right: 0px;
+    position: absolute;
+    border-top: 50px solid #45ffa4;
+    border-bottom: 0px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.heart::before {
+    right: -12px;
+    top: -196px;
+    content: '';
+    width: 114px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+}
+.heart::after {
+    right: -102px;
+    bottom: 97px;
+    content: '';
+    width: 114px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+}
+.heart{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 130px solid red;
+    border-bottom: 0x;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+.oval{
+    width: 200px;
+    height: 100px;
+    border-radius: 100px/50px;
+    background-color: red;
+}
+.box9{
+    width: 0px;
+    height: 0px;
+    /* background-color: red; */
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
+}
+      
+.box10{
+    width: 0px;
+    height: 0px;
+    /* background-color: red; */
+    border-top: 100px solid red;
+    border-left: 100px solid transparent;
+}
+.box11{
+    width: 0px;
+    height:0px;
+    /* border-top: 0; */
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid red;
+    
+}
+.box12{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    margin-left: 200px;
+}
+.box12::after {
+    right: 0px;
+    top: 101px;
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid red;
+    border-bottom: 0px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+}
+   
+.box12::before{
+    top: -51px;
+    width: 0px;
+    height: 0px;
+    border-top: 0px solid transparent;
+    border-bottom: 50px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+}
+
+
+.outer {
+    right: 101px;
+    top: 0;
+    width: 0;
+    height: 0px;
+    border-right: 50px solid red;
+    border-left: 0;
+    position: absolute;
+    content: '';
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+.inner2 {
+    right: 301px;
+    top: 0;
+    width: 0;
+    height: 0px;
+    border-right: 50px solid red;
+    border-left: 0;
+    position: absolute;
+    content: '';
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+   
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box1">
+       
+    </div>
+    <div class="box2">
+
+    </div>
+    <div class="box3">
+         <div class="inner">
+
+         </div>
+    </div>
+    <br>
+    <div class="box4">
+
+    </div>
+    <div class="box5">
+
+    </div>
+    <div class="box6">
+
+    </div>
+    <br>
+    <div class="box7">
+
+    </div>
+    <br>
+    <br><br>
+    <div class="facebook">
+        <div class="text">f</div>
+    </div>
+    <br><br>
+    <div class="skew"></div>
+    <br><br><br><br>
+    <br>
+    <div class="heart"></div>
+    </div>
+    <br><br><br><br>
+    <div class="heart2"></div>
+    <!-- <div class="box8"></div><script>alert("asdf")</script> -->
+    <div class="oval"></div>
+    <br><br>
+    <div class="box9"></div>
+    <br>
+    <div class="box10"></div>
+    <br>
+    <div class="box11"></div>
+    <br><br><br><br><br><br>
+    <div class="box12">
+        <div class="outer"></div>
+        <div class="inner2"></div>
+    </div>
+</body>
+</html>

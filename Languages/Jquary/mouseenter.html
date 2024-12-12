@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        /* .box:hover{
+            background-color: red;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+    </div>
+    <!-- <div id="demo">khushal makwana</div> -->
+    <script>
+        // jquary
+
+        // $(".box").hover(function(){
+        //     $(this).css("background-color","green");
+        // },function(){
+        //     $(this).css("background-color","black");
+        // })
+
+
+        // javascript
+        
+        // let a=document.getElementsByClassName("box");
+        //  a[0].addEventListener("mouseenter",function(){
+        //     document.getElementsByClassName("box")[0].style.background="blue"
+        //  })
+        //  a[0].addEventListener("mouseleave",function(){
+        //     document.getElementsByClassName("box")[0].style.background="black"
+        //  })
+
+        
+
+            $('.box').on({
+                click: function(){
+                    $(this).css("background-color",'red')
+                },
+                mouseenter : function(){
+                    $(this).css("background-color","yellow")
+                },
+                dblclick:function(){
+                    $(this).css("background-color",'blue')
+                },
+                mouseleave:function(){
+                    $(this).css("background-color","green")
+                }
+            })
+
+    </script>
+</body>
+</html>

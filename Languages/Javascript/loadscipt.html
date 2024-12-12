@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+</body>
+<script>
+   let p1 = async () => {
+    return new Promise((resolve, reject) => {
+       setTimeout(()=>{
+        resolve(10);
+       },3000)
+    })
+   }
+   let p2=async()=>{
+    return new Promise((resolve, reject) => {
+        
+    setTimeout(()=>{
+        resolve(20);
+    },2000)
+})
+   }
+   let p3=async()=>{
+    return new Promise((resolve, reject) => {
+         setTimeout(()=>{
+            resolve(30);
+         },5000)
+    })
+   }
+
+  const run=async()=>{
+    console.time("run")
+    let p = await p1();
+    console.log(p);
+    let pp= await p2();
+    console.log(pp);
+    let ppp= await p3();
+    console.log(ppp);
+  console.timeEnd("run");
+   }
+
+   run();
+   localStorage.clear();
+   localStorage.setItem("asdf","asdf")
+   
+</script>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include Font Awesome CSS if not already included -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css"> -->
+    <style>
+        /* Add your styles here */
+        .modal-btn {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 6px 22px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        /* Add more styles as needed */
+
+        /* Use more meaningful class names */
+        .modal-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: auto;
+        }
+
+        .modal-content {
+            top: 30%;
+            height: 100px;
+            position: relative;
+            padding: 28px;
+            width: 300px;
+            background-color: #fff;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* Add a class to the body to prevent scrolling when modal is open */
+        .modal-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Use semantic HTML elements -->
+
+    <button onclick="confirmDelete()" class="delete-btn cursor-pointer">
+        Open Modal
+    </button>
+
+    <div id="myModal" class="modal-container">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sapiente. Doloribus adipisci omnis minus, quia nemo officiis eligendi impedit voluptatibus iste reiciendis aliquam consectetur, veritatis vel nam culpa minima dignissimos vero. Eius laborum aperiam voluptatum accusantium, vitae deleniti unde blanditiis corrupti rem, minus delectus ea repellat praesentium mollitia. Pariatur quo aspernatur velit dolore accusamus rem recusandae amet ipsam debitis, totam, doloribus nostrum iusto ratione aliquid et qui eaque aperiam sit in impedit quis ullam consectetur exercitationem ab! Nobis animi quae odio nemo? Quo et adipisci blanditiis mollitia tempora placeat commodi, consectetur molestias harum excepturi voluptate porro natus optio maiores qui. Voluptatum blanditiis deserunt vero nulla doloribus quidem laboriosam aperiam. Rerum ad quibusdam fugit reprehenderit accusamus doloribus facilis nam atque? Magnam deleniti eos provident aut corrupti obcaecati ad aliquam mollitia ex fugit quidem expedita consectetur consequuntur ducimus numquam animi quasi, nesciunt natus exercitationem nam. Aut, commodi eos, consectetur aliquid ipsam nemo molestiae pariatur quidem ex sint necessitatibus repellendus quia eligendi harum voluptate tempore dolores mollitia consequatur expedita numquam. Voluptates eaque quasi nemo architecto laborum. Sed quis eligendi sequi ipsa iure commodi, qui earum laborum ea reiciendis nesciunt atque ullam consequuntur optio iusto, aperiam explicabo! Iure nobis nulla commodi suscipit amet voluptatem earum consequuntur? Ipsam molestiae natus numquam in rem magnam ut architecto, beatae assumenda sequi hic amet unde, voluptatum, saepe cum repellat blanditiis eligendi. Laboriosam autem deleniti error quia tenetur sapiente, ipsam exercitationem, dolore inventore omnis modi accusamus molestias ducimus, corporis possimus? Eius fuga consequuntur modi voluptatibus praesentium sit accusantium facilis dicta ex tempore, eum sed? Exercitationem perferendis ipsum neque ducimus cupiditate libero laborum tempora laudantium amet vero. Qui laudantium harum unde perferendis perspiciatis voluptatibus nobis, nulla eos voluptatum soluta in, alias cumque vitae commodi cupiditate fuga repellendus nesciunt beatae optio inventore, assumenda ex eaque? Quaerat, fuga veniam reiciendis architecto magni molestiae sed omnis eius. Quod nobis eum, suscipit magni commodi assumenda iusto vel mollitia ad cum autem facilis voluptate deserunt soluta officia laboriosam quo consequatur dolores. Perferendis, quo dolorum. Perspiciatis, consequatur obcaecati modi alias autem odio fugiat, tempora sint nihil fuga nulla, veritatis eius odit quisquam asperiores ullam natus qui et ut illo omnis. Velit quos eos quasi a dolor, praesentium nemo iusto, hic expedita molestiae veniam culpa laboriosam consectetur in impedit eius excepturi non labore nam eaque. Cupiditate voluptatum veniam sit est qui optio incidunt dicta tempora dignissimos architecto odio reprehenderit maxime ipsa voluptas maiores aspernatur ullam, laudantium, sunt ipsum tempore, exercitationem tenetur quidem nesciunt. Voluptatem numquam totam perspiciatis explicabo. Odio fuga veritatis tempore quas, illum minima et cumque natus iure incidunt suscipit quos nisi cum at rem, modi vero animi dolore deserunt voluptatum assumenda sint excepturi error. Doloremque sit modi possimus beatae assumenda. Facilis architecto possimus deserunt commodi harum porro animi, aliquid dicta nulla fugiat blanditiis illo minus! Adipisci deleniti numquam nemo eligendi tenetur, officia non ratione illo officiis maxime laborum sit quisquam blanditiis, dolor, maiores quae optio repellendus animi nesciunt. Optio ipsum perspiciatis iste voluptate cumque quam nisi eos officiis repellendus, doloremque adipisci illo odit consequuntur ipsam, eius commodi similique doloribus iusto nihil maiores. Sint maxime eaque beatae nostrum, quae a enim soluta? Dolore quasi deleniti accusamus, aliquam sunt provident id similique aut veritatis enim repellat dolor voluptatum distinctio neque ipsa sint perferendis optio minus soluta minima consequatur doloremque. Velit quidem distinctio at laboriosam a delectus ipsum quos expedita, illum quo accusantium pariatur architecto incidunt! Ut quasi fuga, eligendi sequi minus velit perferendis possimus cumque, dolore architecto cum consequatur quidem libero nam praesentium sunt amet et nemo laudantium, unde nisi! Quaerat beatae cum laborum amet vero dolore. Quod eos nam, officia voluptate aliquam perspiciatis praesentium natus quo dolorem ad quibusdam mollitia, iure, molestias sit aspernatur illo adipisci facere maxime dicta doloremque ducimus aperiam veritatis quaerat incidunt. Eveniet quia tempora facilis dolores doloribus perspiciatis. Placeat blanditiis, magni delectus fugiat error iste odio culpa ullam esse maiores vel laborum natus at iusto, architecto ut, deleniti iure voluptate. A unde accusantium itaque assumenda maxime adipisci! Tempore ad doloribus numquam, quaerat facilis dignissimos vitae veniam amet vel iusto exercitationem! Recusandae, reiciendis dolorem. Dolorem error quae autem excepturi beatae tempora quas fuga tempore sit, accusamus corrupti magnam harum velit hic nam commodi minima possimus unde ex a. Nihil vitae quisquam, laborum labore quis cum soluta qui sint sit ex quaerat rerum ratione officiis hic sunt fugit dolor assumenda sequi natus libero commodi nam. Culpa assumenda nesciunt facilis, nam expedita recusandae neque ab ad harum ea deleniti, excepturi explicabo. Error, labore harum? Nulla, totam libero officia ullam nemo deserunt! Perspiciatis minus consectetur obcaecati dolorum, maxime sed illo aliquam inventore modi iure impedit optio beatae omnis? Alias tempora earum a ullam incidunt. Aperiam, ipsum, ea, asperiores maxime impedit magnam sit minus aspernatur praesentium beatae sunt temporibus. Omnis, sunt? Animi laborum veritatis necessitatibus dolores adipisci fuga asperiores voluptatem odio rerum. Temporibus, amet. Eos eaque perferendis, minima rem, sint omnis eligendi adipisci corporis nam facere natus. At vel voluptatibus enim eaque fuga, iure laboriosam dolor mollitia harum. Non accusamus nemo temporibus quis, facilis sequi inventore corporis aliquam quas pariatur fugiat eligendi quia esse aliquid corrupti consequatur! Reiciendis nisi iste sapiente laudantium dolore in temporibus sunt reprehenderit optio. Earum exercitationem, excepturi ratione amet reiciendis neque obcaecati tempore ad dolorum, voluptatem est porro veniam modi eum, delectus aliquam! Maiores architecto odit aut rem dolorum ducimus ipsa culpa ratione a blanditiis deleniti sequi ullam odio sunt quasi nulla ea in, tempora debitis eaque fuga eos suscipit sit. Magni fuga facere minus impedit. Deleniti temporibus obcaecati libero quam corrupti fugit eveniet quas. Repellendus necessitatibus maiores ut tenetur impedit voluptatibus veritatis at quo reiciendis illo aut quod facilis molestias consequatur eaque beatae odio id nesciunt cupiditate, modi ab ipsam! Temporibus enim molestiae facere consequuntur excepturi unde adipisci quis voluptas omnis eligendi est dolor voluptates numquam a deserunt deleniti quia dolores, assumenda velit! Sapiente pariatur sunt quaerat, temporibus voluptate dolores vitae? Unde, libero esse quo, nesciunt magnam, amet sunt corrupti nobis delectus dolores impedit dicta. Laboriosam, numquam corrupti suscipit, explicabo facere molestias delectus, magnam accusamus quam adipisci voluptate laudantium exercitationem assumenda libero.
+            <p>Are you sure you want to delete this post?</p>
+            <div class="modal-btns">
+                <button class="modal-btn" onclick="deletePost()">Yes</button>
+                <button class="modal-btn" onclick="closeModal()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Use more meaningful function names
+        function confirmDelete() {
+            document.getElementById('myModal').style.display = 'flex';
+            document.body.classList.add('modal-open'); // Add class to prevent scrolling
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+            document.body.classList.remove('modal-open'); // Remove class to enable scrolling
+        }
+
+        function deletePost() {
+            // Add your delete logic here
+            console.log("Post deleted");
+            closeModal();
+        }
+    </script>
+</body>
+
+</html>

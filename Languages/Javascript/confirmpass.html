@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #alert{
+        color: red;
+    }
+</style>
+   
+</style>
+<body>
+    <fieldset style="width: 400px;" >
+        <legend>Form</legend>
+    <form action="" onsubmit="return validate()">
+           Enter your name :: <input type="text" id="101">
+           <br><br>
+
+           Enter password  :: <input type="password" id="102">
+           <br><br>
+
+           Confirm Password :: <input type="password" id="103" onkeyup="call2(this)">
+           <div id="alert"></div>
+           <br>
+
+           <input type="submit" value="Log in">  <input type="submit"  onclick="showPass(this)"  value="Show password">
+           <br><br>
+
+           <button onclick="call2()">Submit</button>
+        </form>
+    </fieldset>
+</body>
+<script>
+    var sub=1;
+
+    let showPass = async (demo) => {
+        demo.preventDefault()
+        console.log(getElementById('102'))
+    }
+  
+
+   var pass = document.getElementById("102")
+   function call2(khushal){
+        if(khushal.value.length>0){
+            if(khushal.value!=pass.value){
+                document.getElementById("alert").innerHTML="Confirm Password Does Not Match!";
+                sub=0;
+            }
+            else{
+                document.getElementById("alert").innerHTML="";
+                sub=1;
+            }
+        }
+        else{
+            document.getElementById("alert").innerHTML="";
+            sub=1;
+        }
+   }
+   function validate(){
+    if(sub==1){
+        return true;
+    }
+    else{
+        return false;
+    }
+   }
+
+
+
+  
+  
+  
+   var a=document.getElementById("102");
+   function calls(ok){
+    var b=a.getAttribute("type");
+    if(b=="password"){
+        a.setAttribute('type','text');
+        ok.value="Hide password";
+    }
+    else{
+        a.setAttribute('type','password');
+        ok.value="show password";
+    }
+   } 
+   
+</script>
+</html>

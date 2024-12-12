@@ -1,0 +1,21 @@
+.gallary{
+    margin: 20px;
+    width: 160px;
+    border: 1px solid #ccc;
+    float: left;
+    text-align: center;
+}
+.gallary:hover{
+    border: 1px solid #777;
+}
+.gallary img{
+    width: 100%;
+    height: auto;
+}
+div.desk{
+    text-align: center;
+    padding: 15px;
+}
+*{
+    box-sizing: border-box;
+}

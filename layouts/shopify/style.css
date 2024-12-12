@@ -1,0 +1,252 @@
+* {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+:root {
+  --transform: scale(1.05);
+}
+
+.nav1 {
+  /* position: sticky; */
+  /* background-color: #ffffff !important ; */
+  /* margin-right: 10px;
+  margin-left: 20px; */
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 500;
+}
+
+#a {
+  color: #414c5a;
+}
+
+#a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .navitems {
+    text-align: center !important;
+  }
+  .paykun {
+    width: 150px;
+  }
+  .navbar {
+    --bs-navbar-padding-top: 1rem !important;
+  }
+}
+.bar:active {
+  border: none !important;
+}
+
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: ;
+} */
+.signin a {
+  text-decoration: none;
+  color: #ffffff !important;
+  background: black;
+  padding: 6px 20px !important;
+}
+
+.carousel-inner h5, h1, p {
+  color: black !important;
+}
+
+.carousel-caption {
+  color: black !important;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-caption {
+    top: 15% !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-caption {
+    left: -400px !important;
+  }
+  .carousel-inner h1 {
+    font-size: 60px !important;
+  }
+}
+.carousel-control-next-icon {
+  background-color: black !important;
+  border-radius: 50px;
+  padding: 30px !important;
+}
+
+.carousel-control-next {
+  padding: 30px !important;
+}
+
+.btnn {
+  background: black;
+  color: white;
+  padding: 14px 43px;
+  border: none;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.btnn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+marquee img {
+  padding: 20px 30px;
+}
+
+.item img {
+  width: 10%;
+  overflow: hidden;
+}
+
+button.navbar-toggler.bar:focus {
+  outline: none tra !important;
+}
+
+#bar1:active {
+  outline: transparent !important;
+  outline: none !important;
+  border: border transparent !important;
+  border: none !important;
+}
+
+#bar2:active {
+  outline: transparent !important;
+  outline: none !important;
+  border: none !important;
+  border: none !important;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.box {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-body p {
+  margin-bottom: 0.5rem;
+}
+
+.nav1 {
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .navitems {
+    text-align: center !important;
+  }
+}
+.btn {
+  outline: 1px solid transparent;
+  background-color: black !important;
+  border: none !important;
+  margin-top: 15px;
+  text-align: center !important;
+}
+
+.btn:hover {
+  outline: 1px solid black;
+  background-color: white !important;
+  color: black !important;
+}
+
+.font i {
+  font-size: 14px;
+}
+
+.sold {
+  color: #d73f0f !important;
+}
+
+.review {
+  color: #555555;
+}
+
+.sticky {
+  position: sticky;
+  top: 56px;
+  z-index: 5;
+  background-color: white;
+}
+
+.sticky2 {
+  background-color: black !important;
+  border: transparent;
+}
+
+.tty {
+  color: white !important;
+}
+
+.fa-heart {
+  float: right;
+  font-size: 25px !important;
+  color: black;
+}
+
+.fa-heart:active {
+  background-color: black;
+  color: white;
+}
+
+.i1 {
+  background-image: url(image/1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nnf p, .nnf h1, .nnf h2, .nnf h3, .nnf h4, .nnf h5, .nnf h6, .nnf span {
+  margin-bottom: 0px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.py60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .py60 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.ball {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background: #c00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
+}/*# sourceMappingURL=style.css.map */

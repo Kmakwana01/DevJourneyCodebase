@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="demo"></h1>
+    <button onclick="call()">Clik</button>
+    <button onclick="stop()">stop</button>
+
+</head>
+<script>
+    // var demo;
+    // function call(){
+    //    demo= setInterval(function(){
+    //         alert("hii");
+    //     },5000
+    //     )
+    // }
+    // function stop(){
+    //     clearInterval(demo);
+    // }
+
+     var demo;
+    function call(){
+       demo= setTimeout(function(){
+            alert("hii");
+        },1000
+        )
+    }
+    function stop(){
+        clearTimeout(demo);
+    }
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

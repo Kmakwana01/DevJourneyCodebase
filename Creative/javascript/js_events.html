@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .round1 {
+            display: none;
+            /* position: relative; */
+        }
+
+        .round1::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 20px;
+            /* display: none; */
+        }
+
+        .square {
+            display: none;
+        }
+
+        .square::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+        }
+        .tw{
+            width: 20%;
+        }
+        .triangle{
+            display: none;
+        }
+        .triangle{
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 100px solid black;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="tw">
+            <button id="round" onclick="roundd()">round</button>
+            <div class="round1" onmouseenter="enter5()"></div>
+        </div>
+        <div class="tw">
+            <button ondblclick="square11()">square</button>
+            <div class="square"></div>
+        </div>
+        <div class="tw">
+            <button onmouseenter="triangle()" onmouseout="hide1()">Triangle</button>
+            <div class="triangle"></div>
+        </div>
+        <div class="tw">
+           <input type="text" onkeypress="kpress()" id="kpress">
+            <!-- <div class=""></div> -->
+        </div>
+    </div>
+
+
+    <!-- <button class="square">square</button> -->
+    <script>
+        let round1 = document.getElementsByClassName("round1")[0];
+        let square1 =document.getElementsByClassName("square")[0];
+        let triangle1=document.getElementsByClassName("triangle")[0];
+        let kpress1=document.getElementById("kpress")
+        function roundd() {
+            // round1.style.color="red"
+            round1.style.display = "block"
+        }
+        function enter5(){
+        
+            }
+        function square11(){
+            square1.style.display="block"
+        }
+        function triangle(){
+            // alert();
+            triangle1.style.display="block"
+        }
+        function hide1(){
+            triangle1.style.display="none"
+
+        }
+        function kpress(){
+         kpress1.value=   kpress1.value.toUpperCase();
+        }
+    </script>
+</body>
+
+</html>

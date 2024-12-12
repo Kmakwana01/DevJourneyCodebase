@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=15,sum=0,rem=0,k;
+        k=n;
+
+        while(k>=1){
+            rem=parseInt(k%10);
+            console.log(rem);
+            sum+=rem*rem*rem;
+            console.log(sum)
+            k=k/10;
+        }
+        if (sum==n) {
+            document.write("<br>this number is armstrong");
+        } else {
+            document.write("not armstrong");
+        }
+    </script>
+</body>
+</html>

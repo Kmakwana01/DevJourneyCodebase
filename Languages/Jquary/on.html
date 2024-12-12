@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<style>
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+    }
+    /* .box:hover{
+        background-color: red;
+    } */
+</style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+<script>
+    $('.box').on({
+        click:function(){
+            $(this).css("background-color","green")
+        },
+        dblclick:function(){
+            $(this).css("background-color","orange")
+        },
+        mouseenter:function(){
+            $(this).css("background-color","red")
+        },
+        mouseleave:function(){
+            $(this).css("background-color","purple")
+        }
+    })
+
+
+    // timing
+    
+    // $(".box").click(function(){
+    //     $(this).hide(4000);
+    // })
+</script>
+</html>

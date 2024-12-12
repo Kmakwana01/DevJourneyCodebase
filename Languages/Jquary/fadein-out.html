@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<style>
+    .box{
+        background-color: red;
+        height: 300px;
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="btn1">btn 1</button>
+     <button class="btn2">btn 2</button>
+     <button class="btn3">btn 3</button>
+     <button class="btn4">btn 4</button>
+</body>
+<script>
+    $(".btn1").click(function(){
+        $(".box").fadeOut(1000,0)
+    })
+    $(".btn2").click(function(){
+        let a=$(".box").fadeIn(2000);
+        // console.log(a);
+    })
+    $(".btn3").click(function(){
+        $(".box").fadeToggle(2000);
+        // console.log(a);
+    })
+    $(".btn4").click(function(){
+        $(".box").slideToggle(1500);
+    })
+
+</script>
+</html>

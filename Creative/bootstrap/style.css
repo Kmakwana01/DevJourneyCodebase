@@ -1,0 +1,59 @@
+.bg{
+    background-image: url(image/travel-3.jpg);
+    height: 1000px;
+    width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.hgy{
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+
+}
+.text a{
+    color: #fff;
+}
+.hh{
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+.menu li{
+    position: relative;
+}
+.menu li:hover .menu2{
+    display: block;
+}
+.menu>li>a{
+    padding: 19px;
+}
+.menu2{
+    border-top: 5px solid #2563eb;
+    position: absolute;
+    top: 156%;
+    left: 0;
+    background-color: white;
+    padding: 15px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+.menu2 li{
+    line-height: 30px;
+    width: 150px;
+    list-style-type: none;
+}
+.menu2 li a{
+    transition: .5s;
+    text-decoration:none;
+    color: black;
+}
+.menu2 li a:hover{
+    padding-left: 10px;
+}
+

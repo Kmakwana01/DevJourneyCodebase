@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school form</title>
+    <style>
+        body{
+            margin: 15px 30px;
+            padding: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="password"],
+        select,textarea{
+            width: 100%;
+            padding: 3px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"],
+        input[type="reset"],
+        textarea{
+            padding: 6px;
+            text-align: center;
+            width: 100px;
+        }
+        input[type="reset"]:hover{
+            background-color: dodgerblue;
+            border-style: inset;
+        }
+        input[type="submit"]:hover{
+            background-color: dodgerblue;
+            border-style: inset;
+        }
+    </style>
+</head>
+
+<body style="background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(215,70,252,1) 100%);">
+    <form action="#">
+        <!---->
+        <fieldset style="border-radius: 10px;">
+            <legend style="font-weight: bold;text-align: center;">HIGH SCHOOL FORM</legend>
+            <legend></legend>
+    
+        <br>
+        <label for="Enter your Name::">Enter Name:</label>
+        <input type="text" style="border-color: aqua; " placeholder="Name" required>
+        <br>
+        <br> 
+        <label for="101">Enter Password:</label>
+        <input style="border-color: blue; font-family: Verdana, Geneva, Tahoma, sans-serif; " type="password"
+            placeholder="password">
+            <br>
+            <br>
+        <label for="101">Enter Date Of Birth:</label>
+        <input style="border-color: blueviolet;" type="date" name="dob">
+        <br><br>
+        <label for="email">Enter your Email:</label>
+        <input type="email" name="email" id="101" style="border-color: slategray; " placeholder="Gmail123@.com">
+        <!-- radio -->
+        <p><b>1.choice your class</b></p>
+        <label>
+           <input type="radio" name="class">class 9
+        </label>
+        <label>
+            <br><input type="radio" name="class">class 10
+        </label>
+
+        <label>
+            <br><input type="radio" name="class" >class 11
+        </label>
+        <label>
+            <br><input type="radio" name="class">class 12
+        </label>
+        <br>
+        <!--CHEXKBOXEX-->
+        <p><b>2.Enter Your Subjects</b></p>
+        <label for="math">
+            <input type="checkbox" value="math" name="subject" id="101">Math
+        </label>
+        <br>
+        <label for="psy">
+            <input type="checkbox" value="psy" name="subject" id="101">Psy
+            <label for="hindi">
+                <br>
+                <input type="checkbox" value="hindi" name="subject" id="101">Hindi
+            </label>
+            <br>
+            <label for="gujarati">
+                <input type="checkbox" value="gujarati" name="subject" id="101">Gujarati
+            </label>
+            <br> 
+            <p><b>3.Select yore city</b></p>
+            <select name="city" id="101">
+                <option value="delhi">Delhi</option>
+                <option value="surat">surat</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Bhavnagar">Bhavnagar</option>
+                <option value="Bharuch">Bharuch</option>
+            </select>
+            <br>
+            
+            <br>
+            <textarea style="padding: 20px; width: 20%; text-align: center;" name="feedback" id="101" placeholder="please give your valuable feedback here">feedback</textarea>
+            
+            <br>
+            <pre><input style="border-color: rgb(99, 145, 90);" type="submit" value="submit" name="submit" id="101"> <input type="reset" value="reset" name="reseet" id="101">
+            </pre>
+    </form>
+</fieldset>
+</body>
+
+</html>

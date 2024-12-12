@@ -129,5 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-Languages\Node_js\blog_web
-Languages\Python_Django
+Languages/Node_js/blog_web
+Languages/Python_Django

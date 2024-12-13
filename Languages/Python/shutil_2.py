@@ -1,11 +1,8 @@
 import requests
 
-url = ('https://newsapi.org/v2/everything?'
-       'q=Apple&'
-       'from=2023-09-19&'
-       'sortBy=popularity&'
-       'apiKey=API_KEY')
+url = ('https://jsonplaceholder.typicode.com/todos')
 
 response = requests.get(url)
 
-print(response.json)
+# Print the JSON response
+print(response.json())

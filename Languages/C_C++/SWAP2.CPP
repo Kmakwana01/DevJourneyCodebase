@@ -1,21 +1,21 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
+#include <stdio.h>
+#include <conio.h>
+int main()
 {
-	float a,b;
-clrscr();
+	float a, b;
+	// clrscr();
 
 	printf("enter a\t");
-	scanf("%f",&a);
+	scanf("%f", &a);
 
 	printf("enter b\t");
-	scanf("%f",&b);
+	scanf("%f", &b);
 
-	a=a-b;//a == 10-20 ==a=10
-	b=a+b;//b == 10+20 ==b=30
-	a=b-a;//a == 30-10 ==a=20
-	printf("a==%f\n",a);
-	printf("b==%f\n",b);
+	a = a + b; // a == 10-20 ==a=10
+	b = a - b; // b == 10+20 ==b=30
+	a = a - b; // a == 30-10 ==a=20
+	printf("a==%f\n", a);
+	printf("b==%f\n", b);
 
-getch();
+	getch();
 }

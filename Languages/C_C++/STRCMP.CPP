@@ -1,24 +1,23 @@
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
 void main()
 {
-	char str[89],str3[44];
-clrscr();
+	char str[89], str3[44];
+	clrscr();
 	puts("enter string");
 	gets(str);
 
 	puts("enter string3");
 	gets(str3);
 
-	if(strcmp(str,str3)==0)
+	if (strcmp(str, str3) == 0)
 	{
-	puts("equel");
+		puts("equel");
 	}
 	else
 	{
-	puts("not equle");
+		puts("not equle");
 	}
-getch();
+	getch();
 }
-

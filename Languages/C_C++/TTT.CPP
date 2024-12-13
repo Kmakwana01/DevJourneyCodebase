@@ -1,33 +1,32 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 void main()
 {
-int p,k;
-clrscr();
-		printf("enter the p&q = ");
-		scanf("%d%d",&p,&k);
-		if(p>k)
+	int p, k;
+	clrscr();
+	printf("enter the p&q = ");
+	scanf("%d%d", &p, &k);
+	if (p > k)
+	{
+		while (p >= k)
 		{
-			while(p>=k)
+			if (p % 2 == 0)
 			{
-			if(p%2==0)
-			{
-				printf("%d\n",p);
+				printf("%d\n", p);
 			}
-				p--;
-
-			}
+			p--;
 		}
-		else
+	}
+	else
+	{
+		while (p <= k)
 		{
-			while(p<=k)
+			if (k % 2 == 1)
 			{
-			if(k%2==1)
-			{
-				printf("%d\n",k);
+				printf("%d\n", k);
 			}
-				k--;
-			}
+			k--;
 		}
-		getch();
-		}
+	}
+	getch();
+}

@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "PT(1).C": "cpp",
-        "PT(2).C": "cpp"
+        "PT(2).C": "cpp",
+        "swap.C": "cpp",
+        "SOUND.C": "cpp",
+        "iostream": "cpp",
+        "RAINBOW.C": "cpp",
+        "CLOCK.C": "cpp"
     }
 }

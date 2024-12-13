@@ -1,31 +1,31 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 void main()
 {
-	int t[78],n,i,o;
-clrscr();
+	int t[78], n, i, o;
+	clrscr();
 	printf("enter elements :");
-	scanf("%d",&n);
+	scanf("%d", &n);
 
-	for(i=0; i<n; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf("t[%d] :: ",i);
-		scanf("%d",&t[i]);
+		printf("t[%d] :: ", i);
+		scanf("%d", &t[i]);
 	}
 
 	printf("\nenter delete element");
-	scanf("%d",&o);
+	scanf("%d", &o);
 
-	for(i=o; i<n; i++)
+	for (i = o; i < n; i++)
 	{
-		t[i]=t[i+1];
+		t[i] = t[i + 1];
 	}
 
 	printf("\nafter delet element");
 
-	for(i=0; i<n-1; i++)
+	for (i = 0; i < n - 1; i++)
 	{
-		printf("\nt[%d] :: %d",i,t[i]);
+		printf("\nt[%d] :: %d", i, t[i]);
 	}
-getch();
+	getch();
 }

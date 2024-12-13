@@ -1,14 +1,13 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 void main()
 {
-int i = 1;
-clrscr();
-do
-{
-printf("%d",i);
-i++;
-}
-while(i<=100);
-getch();
+    int i = 1;
+    clrscr();
+    do
+    {
+        printf("%d", i);
+        i++;
+    } while (i <= 100);
+    getch();
 }

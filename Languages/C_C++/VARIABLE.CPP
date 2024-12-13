@@ -1,15 +1,15 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 void main()
-{           //variable and datatype
+{ // variable and datatype
 
-clrscr();
+    clrscr();
 
-int number=454;
-float pi=3.14;
-char persontage='#';
+    int number = 454;
+    float pi = 3.14;
+    char persontage = '#';
 
-printf("%d",number);
-scanf("%d,%d,%d",&number,&pi,persontage);
-getch();
+    printf("%d", number);
+    scanf("%d,%d,%d", &number, &pi, persontage);
+    getch();
 }

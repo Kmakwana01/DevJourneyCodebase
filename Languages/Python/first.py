@@ -3,6 +3,8 @@ class first1:
         print("hello")
     
 a = first1() 
+
 a.f()
+
 if(__name__=="__main__"):
     a.f()

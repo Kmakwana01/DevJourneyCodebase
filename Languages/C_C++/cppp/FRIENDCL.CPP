@@ -1,23 +1,26 @@
-#include<iostream.h>
-#include<conio.h>
-class ok{
-		int a,b;
-		public:
-		void show()
-		{
-			a=10,b=11;
-		}
-		friend class pk;
+#include <iostream.h>
+#include <conio.h>
+class ok
+{
+	int a, b;
+
+public:
+	void show()
+	{
+		a = 10, b = 11;
+	}
+	friend class pk;
 };
 
-class pk{
-		public:
-		int c;
-		void add(ok m)
-		{
-			c=m.a+m.b;
-			cout<<c;
-		}
+class pk
+{
+public:
+	int c;
+	void add(ok m)
+	{
+		c = m.a + m.b;
+		cout << c;
+	}
 };
 int main()
 {
@@ -27,5 +30,4 @@ int main()
 	pk b;
 	b.add(a);
 	getch();
-	}
-
+}

@@ -1,12 +1,12 @@
-#include <iostream.h>
-#include <conio.h>
+#include <iostream>
+// #include <conio.h>
 #include <string.h>
 
 class bank
 {
 public:
 	long int number;
-	char name[100];
+	std::string name;
 	float balance;
 	void open_acc();
 	void show_acc();
@@ -14,70 +14,78 @@ public:
 
 void bank::open_acc()
 {
-	cout << "enter the account number ::";
-	cin >> number;
+	std::cout << "Enter the account number: ";
+	std::cin >> number;
 
-	cout << "enter the name::";
-	cin >> name;
+	std::cout << "Enter the name: ";
+	std::cin.ignore(); // Clear newline from previous input
+	std::getline(std::cin, name);
 
-	cout << "enter the opening balance::";
-	cin >> balance;
+	std::cout << "Enter the opening balance: ";
+	std::cin >> balance;
 }
 
 void bank::show_acc()
 {
-	cout << "\n\n--your account detail--";
-	cout << endl
-		 << number << endl
-		 << name << endl
-		 << balance;
+	std::cout << "\n\n--Your Account Details--\n";
+	std::cout << "Account Number: " << number << "\n";
+	std::cout << "Name: " << name << "\n";
+	std::cout << "Balance: " << balance << "\n";
 }
 
-void main()
+int main()
 {
-	clrscr();
 	bank obj;
+
 	obj.open_acc();
-	obj.show_acc();
-	cout << "\n\nwithdrow balance = 1" << endl
-		 << "deposit balance = 2" << endl
-		 << "chech balance = 3";
-	cout << "\nenter your choice ::";
-	int n;
-	cin >> n;
-	switch (n)
+	int choice;
+
+	do
 	{
-	case 1:
-		cout << "\nplease enter your withdrow amout :: ";
-		int with;
-		cin >> with;
-		if (obj.balance < with)
+		std::cout << "\n\nOptions:\n";
+		std::cout << "1. Withdraw Balance\n";
+		std::cout << "2. Deposit Balance\n";
+		std::cout << "3. Check Balance\n";
+		std::cout << "4. Exit\n";
+		std::cout << "Enter your choice: ";
+		std::cin >> choice;
+
+		switch (choice)
 		{
-			cout << "not valid amount";
+
+		case 1:
+			std::cout << "\nPlease enter your withdrawal amount: ";
+			int with;
+			std::cin >> with;
+			if (obj.balance < with)
+			{
+				std::cout << "Not valid amount\n";
+			}
+			else
+			{
+				obj.balance -= with;
+				std::cout << "\nSuccessfully withdrawn. Thank you.\n";
+				std::cout << "Available balance: " << obj.balance << "\n";
+			}
+			break;
+		case 2:
+			std::cout << "\nPlease enter your deposit amount: ";
+			int dip;
+			std::cin >> dip;
+			obj.balance += dip;
+			std::cout << "\nThank you.\n";
+			std::cout << "Available balance: " << obj.balance << "\n";
+			break;
+		case 3:
+			std::cout << "Available balance: " << obj.balance << "\n";
+			break;
+		case 4:
+			std::cout << "\nThank you for using our service. Goodbye!\n";
+			break;
+		default:
+			std::cout << "\nPlease enter a valid choice.\n";
 		}
-		else
-		{
-			obj.balance -= with;
-			cout << "\nsucsesfully withdrow \nthank you";
-			cout << endl
-				 << "\nyour availaible amount is " << obj.balance;
-		}
-		break;
-	case 2:
-		cout << "\nplease enter your deposit amount :: ";
-		int dip;
-		cin >> dip;
-		obj.balance += dip;
-		cout << "\nthank you";
-		cout << endl
-			 << "\nyour availaible amount is " << obj.balance;
-		break;
-		//	default : cout<<"\nplease enter valid chice";
-	case 3:
-		cout << "\nyour availaible balance is " << obj.balance;
-		break;
-	default:
-		cout << "\nplease enter valid choice";
-	}
-	getch();
+	} while (choice != 4);
+
+	return 0;
 }

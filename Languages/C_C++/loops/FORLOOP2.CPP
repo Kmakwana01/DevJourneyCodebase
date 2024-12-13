@@ -1,16 +1,15 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 void main()
 {
-clrscr();
-for(int i=1; i<=10; ++i)
-{
-   for(int j=1; j<=i; ++j)
+   clrscr();
+   for (int i = 1; i <= 10; ++i)
    {
-   printf("k",j);
+      for (int j = 1; j <= i; ++j)
+      {
+         printf("k", j);
+      }
+      printf("\n");
    }
-   printf("\n");
-
-}
-getch();
+   getch();
 }

@@ -1,4 +1,5 @@
 v = int(input("enter your age == "))
+
 print(v)
 if(v>18 and v<100):
     print("your age is valid")

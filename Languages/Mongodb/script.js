@@ -1,7 +1,7 @@
 let mongoose = require("mongoose")
 let Schema = mongoose.Schema
 
-mongoose.connect('mongodb://127.0.0.1:27017/khushal')
+mongoose.connect('mongodb://127.0.0.1:27017/test')
   .then(() => console.log('Connected!'))
   .catch((error) => console.log(error.message))
 
@@ -11,7 +11,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/khushal')
     Categori : Array
   })
 
-let USER = mongoose.model("newdata",NewSchema);
+let USER = mongoose.model("users",NewSchema);
 
 
 

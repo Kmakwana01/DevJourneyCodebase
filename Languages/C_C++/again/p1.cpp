@@ -19,4 +19,11 @@ int main()
     return 0;
 }
 
-// g++ p1.cpp -o p1
+// g++ -std=c++11 p1.cpp && ./a.exe
+
+
+// A B C D E F 
+// A B C D E F
+// A B C D E F
+// A B C D E F
+// A B C D E F

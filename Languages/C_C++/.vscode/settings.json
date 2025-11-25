@@ -1,11 +1,30 @@
 {
     "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.py": "python",
+        "*.php": "php",
         "PT(1).C": "cpp",
         "PT(2).C": "cpp",
         "swap.C": "cpp",
         "SOUND.C": "cpp",
         "iostream": "cpp",
         "RAINBOW.C": "cpp",
-        "CLOCK.C": "cpp"
+        "CLOCK.C": "cpp",
+        "ostream": "cpp",
+        "PRIMe.C": "cpp",
+        "PT(4).C": "cpp",
+        "PT(8).C": "cpp",
+        "PT(12).C": "cpp",
+        "PT(15).C": "cpp",
+        "PT(18).C": "cpp",
+        "PT(21).C": "cpp",
+        "PT(25).C": "cpp",
+        "PT(31).C": "cpp",
+        "PT(28).C": "cpp",
+        "PT(32).C": "cpp",
+        "CIRCLE.C": "cpp",
+        "LASER.C": "cpp",
+        "KAUSHALP.C": "cpp",
+        "MOU.C": "cpp"
     }
 }

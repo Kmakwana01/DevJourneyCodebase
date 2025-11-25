@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resize Input</title>
 </head>
 <body>
-   <input type="text" onclick="this.style.width='300px',this.style.height='300px'">
+    <input type="number" id="id1" placeholder="Enter size in px">
 </body>
-    <script>
-       
-    </script>
+<script>
+    let inputEl = document.getElementById('id1');
+
+    // Trigger on input change
+    inputEl.addEventListener('input', () => {
+        let size = parseInt(inputEl.value) || 0;
+
+        // Limit to reasonable max to avoid disappearing
+        if (size > 800) size = 800;
+        if (size < 20) size = 20;
+
+        inputEl.style.width = size + 'px';
+        inputEl.style.height = size + 'px';
+    });
+</script>
 </html>

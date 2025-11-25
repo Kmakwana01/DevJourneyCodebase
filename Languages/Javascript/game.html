@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
     body {
       background-color: #eee;
     }
@@ -13,7 +13,7 @@
     .main {
       width: 330px;
       margin: auto;
-      margin-top: 50px;
+      margin-top: 50px;gt
     }
 
     .row {
@@ -50,33 +50,34 @@
       align-items: center;
     }
   </style>
-</head>
+  </head>
 
-<body>
-  <h1 style="text-align: center; font-weight: 600; margin-top: 40px;">Puzzle Game</h1>
-  <div class="main">
-    <div class="row">
-      <div id="v1" onclick="f1()">1</div>
-      <div id="v2" onclick="f2()">2</div>
-      <div id="v3" onclick="f3()">3</div>
+  <body>
+    <h1 style="text-align: center; font-weight: 600; margin-top: 40px;">Puzzle
+      Game</h1>
+    <div class="main">
+      <div class="row">
+        <div id="v1" onclick="f1()">1</div>
+        <div id="v2" onclick="f2()">2</div>
+        <div id="v3" onclick="f3()">3</div>
+      </div>
+      <div class="row">
+        <div id="v4" onclick="f4()">4</div>
+        <div id="v5" onclick="f5()">5</div>
+        <div id="v6" onclick="f6()">6</div>
+      </div>
+      <div class="row">
+        <div id="v7" onclick="f7()">7</div>
+        <div id="v8" onclick="f8()">8</div>
+        <div id="v9" onclick="f9()"></div>
+      </div>
     </div>
-    <div class="row">
-      <div id="v4" onclick="f4()">4</div>
-      <div id="v5" onclick="f5()">5</div>
-      <div id="v6" onclick="f6()">6</div>
-    </div>
-    <div class="row">
-      <div id="v7" onclick="f7()">7</div>
-      <div id="v8" onclick="f8()">8</div>
-      <div id="v9" onclick="f9()"></div>
-    </div>
-  </div>
 
-  <div class="ff">
-    <button class="btnn" onclick="complate()">Complate</button>
+    <div class="ff">
+      <button class="btnn" onclick="complate()">Complate</button>
 
-  </div>
-  <script>
+    </div>
+    <script>
 
     let v1 = document.getElementById("v1");
     let v2 = document.getElementById("v2");
@@ -307,6 +308,6 @@
       }
     }
   </script>
-</body>
+  </body>
 
 </html>

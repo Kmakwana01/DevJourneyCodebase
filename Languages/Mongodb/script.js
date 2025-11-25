@@ -16,7 +16,7 @@ let USER = mongoose.model("users",NewSchema);
 
 
 (async function hello(){
-  // USER.create({ item: "postcard", "qty": 45, "size": { "h": 10, "w": 15.25, "uom": "cm" }, "status": "A" })
+  await USER.create({ name: "postcard", "surname": 45, "Categori": ["A", "B", "C"] })
     // let data = await USER.find({$or:[{status:"D"},{"size.w" :11},{qty:{$eq:100}}]})
     let data = await USER.find()
     // let data = await USER.find({ item:"planner" })

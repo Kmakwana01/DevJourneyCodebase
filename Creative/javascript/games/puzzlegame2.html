@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle Game</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 120px);
+      grid-gap: 10px;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+    .cell {
+      width: 120px;
+      height: 120px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+      user-select: none;
+    }
+    .cell:hover {
+      background: rgba(255,255,255,1);
+      transform: scale(1.05);
+    }
+    .cell.empty {
+      background: rgba(255,255,255,0.2);
+      cursor: default;
+    }
+    #status {
+      font-size: 1.6rem;
+      margin: 20px 0;
+      font-weight: 500;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    #restart {
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    #restart:hover {
+      background: #e43a4a;
+      transform: translateY(-2px);
+    }
+    @media (max-width: 500px) {
+      .board {
+        grid-template-columns: repeat(3, 80px);
+        grid-gap: 8px;
+      }
+      .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      #status {
+        font-size: 1.3rem;
+      }
+      #restart {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Puzzle Game</h1>
+  <div id="status">Arrange the tiles in order</div>
+  <div class="board" id="board"></div>
+  <button id="restart" style="margin-top:20px;">New Game</button>
+
+  <script>
+    const boardElement = document.getElementById("board");
+    const statusDisplay = document.getElementById("status");
+    const restartButton = document.getElementById("restart");
+
+    let board = [];
+    const size = 3;
+
+    function initGame() {
+      board = [...Array(size*size).keys()].map(x => x+1);
+      board[board.length-1] = 0; // last cell empty
+      shuffleBoard();
+      renderBoard();
+      statusDisplay.textContent = "Arrange the tiles in order";
+    }
+
+    function shuffleBoard() {
+      do {
+        for (let i = board.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [board[i], board[j]] = [board[j], board[i]];
+        }
+      } while (!isSolvable(board) || isSolved()); 
+    }
+
+    function isSolvable(arr) {
+      let invCount = 0;
+      for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+          if (arr[i] && arr[j] && arr[i] > arr[j]) invCount++;
+        }
+      }
+      return invCount % 2 === 0;
+    }
+
+    function renderBoard() {
+      boardElement.innerHTML = "";
+      board.forEach((value, idx) => {
+        const cell = document.createElement("div");
+        cell.classList.add("cell");
+        if (value === 0) {
+          cell.classList.add("empty");
+        } else {
+          cell.textContent = value;
+          cell.addEventListener("click", () => handleCellClick(idx));
+        }
+        boardElement.appendChild(cell);
+      });
+    }
+
+    function handleCellClick(index) {
+      const emptyIndex = board.indexOf(0);
+      const validMoves = getValidMoves(emptyIndex);
+      if (validMoves.includes(index)) {
+        [board[emptyIndex], board[index]] = [board[index], board[emptyIndex]];
+        renderBoard();
+        if (isSolved()) {
+          statusDisplay.textContent = "🎉 Congratulations, You Win!";
+        }
+      }
+    }
+
+    function getValidMoves(emptyIndex) {
+      const moves = [];
+      const row = Math.floor(emptyIndex / size);
+      const col = emptyIndex % size;
+      if (row > 0) moves.push(emptyIndex - size); 
+      if (row < size - 1) moves.push(emptyIndex + size); 
+      if (col > 0) moves.push(emptyIndex - 1); 
+      if (col < size - 1) moves.push(emptyIndex + 1); 
+      return moves;
+    }
+
+    function isSolved() {
+      for (let i = 0; i < board.length - 1; i++) {
+        if (board[i] !== i+1) return false;
+      }
+      return true;
+    }
+
+    restartButton.addEventListener("click", initGame);
+    initGame();
+  </script>
+</body>
+</html>

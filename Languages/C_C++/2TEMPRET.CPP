@@ -1,36 +1,37 @@
-#include <stdio.h>
-#include <conio.h>
-void main()
+#include <iostream>
+using namespace std;
+
+int main()
 {
 	float a, b, celcius, fehranhit;
 	int x;
-	clrscr();
-	printf("celcius to fehranhit : case 1\n");
-	printf("fehranhit to celcius : case 2\n");
+	cout << "Celcius to Fehranhit : case 1" << endl;
+	cout << "Fehranhit to Celcius : case 2" << endl;
 
-	printf("enter your choice\n");
-	scanf("%d", &x);
+	cout << "Enter your choice: ";
+	cin >> x;
 
 	switch (x)
 	{
 	case 1:
-		printf("enter the fehranhit tempreture((cel. to fehr.))\n");
-		scanf("%f", &b);
+		cout << "Enter the Fehranhit temperature (Cel. to Fehr.): ";
+		break;
+		cin >> b;
 
 		fehranhit = ((9 * b) / 5) + 32;
-		printf("%f", fehranhit);
+		cout << fehranhit;
 		break;
 
 	case 2:
-		printf("enter the celcius temreture(((fehr. to cel.)))\n");
-		scanf("%f", &a);
+		cout << "Enter the Celcius temperature (Fehr. to Cel.): ";
+		cin >> a;
 
 		celcius = 5 * (a - 32) / 9;
-		printf("%f", celcius);
+		cout << celcius;
 		break;
 
 	default:
-		printf("\n\n not a valid choice ");
+		cout << "\n\nNot a valid choice";
 	}
-	getch();
+	return 0;
 }

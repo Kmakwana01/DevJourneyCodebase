@@ -1,24 +1,24 @@
-#include <stdio.h>
-#include <conio.h>
-void main()
+#include <iostream>
+using namespace std;
+
+int main()
 {
 	char chh;
-	clrscr();
-	printf("enter the char: ");
-	scanf("%c", &chh);
+	cout << "Enter the char: ";
+	cin >> chh;
 
 	if (chh == 'a' || chh == 'e' || chh == 'i' || chh == 'o' || chh == 'u' ||
 		chh == 'A' || chh == 'E' || chh == 'I' || chh == 'O' || chh == 'U')
 	{
-		printf("the vowel charcter");
+		cout << "The vowel character";
 	}
 	else if (chh >= 'a' && chh <= 'z' || chh >= 'A' && chh <= 'Z')
 	{
-		printf("thr consonent char");
+		cout << "The consonant character";
 	}
 	else
 	{
-		printf("not a alphabet");
+		cout << "Not an alphabet";
 	}
-	getch();
+	return 0;
 }
